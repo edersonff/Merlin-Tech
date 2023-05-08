@@ -1,14 +1,14 @@
 const links = [
-  { name: "Open roles", href: "#" },
-  { name: "Internship program", href: "#" },
-  { name: "Our values", href: "#" },
-  { name: "Meet our leadership", href: "#" },
+  { name: "Regras atuais", href: "#" },
+  { name: "Programa de estágio", href: "#" },
+  { name: "Nossos valores", href: "#" },
+  { name: "Conheça nossa liderança", href: "#" },
 ];
 const stats = [
-  { name: "Offices worldwide", value: "12" },
-  { name: "Full-time colleagues", value: "300+" },
-  { name: "Hours per week", value: "40" },
-  { name: "Paid time off", value: "Unlimited" },
+  { name: "Escritorios", value: "12" },
+  { name: "Funcionários", value: "200" },
+  { name: "Trabalho/semana", value: "40" },
+  { name: "Clientes", value: "1000" },
 ];
 
 export default function HomeHeader() {
@@ -46,7 +46,7 @@ export default function HomeHeader() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Work with us
+            Trabalhe com a gente
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
             Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui

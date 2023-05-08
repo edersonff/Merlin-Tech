@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:tailwind:prod": "NODE_ENV=production postcss styles/tailwind.css -o styles/tailwind.output.css",
     "start": "next start",
     "lint": "next lint"
   },

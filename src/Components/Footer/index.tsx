@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="mb-6 md:mb-0">
             <a href="https://Merlin.com/" className="flex items-center">
               <img
-                src="/merlin/logo.png"
+                src="/Merlin/logo.png"
                 className="h-8 mr-3"
                 alt="Merlin Logo"
               />

@@ -1,14 +1,14 @@
 export const tabs = [
   {
-    name: "Home",
+    name: "Inicio",
     path: "/",
   },
   {
-    name: "About",
+    name: "Sobre",
     path: "/about",
   },
   {
-    name: "Contact",
+    name: "Contato",
     path: "/contact",
   },
 ];

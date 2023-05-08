@@ -3,6 +3,11 @@ import { motion } from "framer-motion";
 import { tabs } from "./tabs";
 export default function Navbar() {
   const [showSidebar, setShowSidebar] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  React.useEffect(() => {
+    setWindowWidth(window.innerWidth);
+  }, []);
 
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
@@ -11,19 +16,15 @@ export default function Navbar() {
   return (
     <nav className="bg-white/50 sticky w-full z-20 top-0 left-0 border-b border-gray-200 backdrop-blur-md">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://flowbite.com/" className="flex items-center">
-          <img
-            src="/merlin/logo.png"
-            className="h-8 mr-3"
-            alt="Flowbite Logo"
-          />
+        <a href="https://Merlin.com/" className="flex items-center">
+          <img src="/merlin/logo.png" className="h-8 mr-3" alt="Merlin Logo" />
         </a>
         <div className="flex md:order-2">
           <button
             type="button"
             className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 "
           >
-            Get started
+            Vamos lá
           </button>
           <button
             data-collapse-toggle="navbar-sticky"
@@ -54,7 +55,7 @@ export default function Navbar() {
             "items-center justify-between w-full md:flex md:w-auto md:order-1 md:flex-grow md:ml-10 md:pr-0 md:space-x-8 overflow-hidden " +
             (showSidebar ? "flex" : "hidden")
           }
-          animate={{ height: showSidebar ? "auto" : 0 }}
+          animate={{ height: showSidebar || windowWidth > 768 ? "auto" : 0 }}
         >
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 justify-center">
             {tabs.map((tab) => (

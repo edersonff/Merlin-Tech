@@ -7,19 +7,21 @@ import HomeLogos from "@/Components/Home/Logos";
 import HomeStats from "@/Components/Home/Stats";
 import HomeTeam from "@/Components/Home/Team";
 import HomeTestimonials from "@/Components/Home/Testimonials";
+import HomeVertical from "@/Components/Home/Vertical";
 
 export default function Home() {
   return (
     <>
-      <HomeTestimonials />
-      <HomeContact />
-      <HomeContentSection />
-      <HomeFeature />
-      <HomeHeader />
       <HomeHero />
-      <HomeLogos />
+      <HomeVertical />
+      <HomeFeature />
       <HomeStats />
+      <HomeTestimonials />
+      <HomeContentSection />
+      <HomeHeader />
+      <HomeLogos />
       <HomeTeam />
+      <HomeContact />
     </>
   );
 }

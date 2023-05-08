@@ -17,7 +17,7 @@ export default function Navbar() {
     <nav className="bg-white/50 sticky w-full z-20 top-0 left-0 border-b border-gray-200 backdrop-blur-md">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://Merlin.com/" className="flex items-center">
-          <img src="/Merlin/logo.png" className="h-8 mr-3" alt="Merlin Logo" />
+          <img src="/Merlin/Logo.png" className="h-8 mr-3" alt="Merlin Logo" />
         </a>
         <div className="flex md:order-2">
           <button

@@ -6,23 +6,23 @@ export default function Footer() {
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="https://flowbite.com/" className="flex items-center">
+            <a href="https://Merlin.com/" className="flex items-center">
               <img
                 src="/merlin/logo.png"
                 className="h-8 mr-3"
-                alt="FlowBite Logo"
+                alt="Merlin Logo"
               />
             </a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
-                Resources
+                Produtos
               </h2>
               <ul className="text-gray-600  font-medium">
                 <li className="mb-4">
-                  <a href="https://flowbite.com/" className="hover:underline">
-                    Flowbite
+                  <a href="https://Merlin.com/" className="hover:underline">
+                    Merlin
                   </a>
                 </li>
                 <li>
@@ -30,19 +30,19 @@ export default function Footer() {
                     href="https://tailwindcss.com/"
                     className="hover:underline"
                   >
-                    Tailwind CSS
+                    Merlin
                   </a>
                 </li>
               </ul>
             </div>
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
-                Follow us
+                Nós siga
               </h2>
               <ul className="text-gray-600  font-medium">
                 <li className="mb-4">
                   <a
-                    href="https://github.com/themesberg/flowbite"
+                    href="https://github.com/themesberg/Merlin"
                     className="hover:underline "
                   >
                     Github
@@ -81,7 +81,7 @@ export default function Footer() {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center ">
             © {new Date().getFullYear()}{" "}
-            <a href="https://flowbite.com/" className="hover:underline">
+            <a href="https://Merlin.com/" className="hover:underline">
               Merlin™
             </a>
             . Todos os direitos reservados.

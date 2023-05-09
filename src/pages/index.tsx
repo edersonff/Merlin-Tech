@@ -3,6 +3,7 @@ import HomeContentSection from "@/Components/Home/ContentSection";
 import HomeFeature from "@/Components/Home/Feature";
 import HomeHeader from "@/Components/Home/Header";
 import HomeHero from "@/Components/Home/Hero";
+import HomeCards from "@/Components/Home/HomeCards";
 import HomeLogos from "@/Components/Home/Logos";
 import HomeStats from "@/Components/Home/Stats";
 import HomeTeam from "@/Components/Home/Team";
@@ -13,6 +14,7 @@ export default function Home() {
   return (
     <>
       <HomeHero />
+      <HomeCards />
       <HomeVertical />
       <HomeFeature />
       <HomeStats />

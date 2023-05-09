@@ -15,8 +15,10 @@ export default function HomeContact() {
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Entre em contato
         </h2>
-        <p className="mt-2 text-lg leading-8 text-gray-600">
-          Aute magna irure deserunt veniam aliqua magna enim voluptate.
+        <p className="mt-4 text-lg leading-8 text-gray-600 max-w-xl mx-auto text-justify">
+          Estamos sempre disponíveis para ouvir você e ajudar a transformar suas
+          ideias em soluções reais. Entre em contato conosco e descubra como a
+          Merlin pode ajudar a impulsionar o sucesso do seu negócio.
         </p>
       </div>
       <form action="#" method="POST" className="mx-auto mt-8 max-w-xl sm:mt-10">

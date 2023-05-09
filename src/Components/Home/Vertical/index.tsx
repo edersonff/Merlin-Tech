@@ -18,7 +18,7 @@ export default function HomeVertical() {
   }, []);
 
   return (
-    <div className="overflow-hidden h-80 w-full bg-white relative">
+    <div className="overflow-hidden h-80 w-full bg-white relative rounded-t-3xl">
       <div>
         {width && height && (
           <>

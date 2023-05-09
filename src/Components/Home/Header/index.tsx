@@ -51,9 +51,8 @@ export default function HomeHeader() {
             Trabalhe com a gente
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-            fugiat aliqua.
+            Venha fazer parte da equipe Merlin - Sistemas. Juntos, podemos
+            construir soluções inovadoras e transformar o futuro da tecnologia.
           </p>
         </div>
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">

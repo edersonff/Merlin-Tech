@@ -3,7 +3,7 @@ import OnView from "@/Components/Geral/OnView";
 const people = [
   {
     name: "Ederson F Fagundes",
-    role: "Co-Fundador / CEO",
+    role: "Fundador / CEO",
     imageUrl:
       "https://media.licdn.com/dms/image/D4D03AQEuOOYQqfUVvw/profile-displayphoto-shrink_800_800/0/1665242848815?e=1689206400&v=beta&t=Tl3EoomCrlLl-I6ca7RKsKoywAOOivTddUAV8RLUEfQ",
   },
@@ -30,8 +30,8 @@ export default function HomeTeam() {
             Conheça nosso time
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae
-            elementum enim vitae ullamcorper suspendisse.
+            Conheça alguns dos membros do nosso time Merlin - Sistemas e seus
+            respectivos cargos:
           </p>
         </div>
         <ul

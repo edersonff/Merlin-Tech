@@ -1,3 +1,5 @@
+import OnView from "@/Components/Geral/OnView";
+
 export default function HomeTestimonials() {
   return (
     <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
@@ -10,13 +12,15 @@ export default function HomeTestimonials() {
           alt=""
         />
         <figure className="mt-10">
-          <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
-            <p>
-              “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              expedita voluptas culpa sapiente alias molestiae. Numquam corrupti
-              in laborum sed rerum et corporis.”
-            </p>
-          </blockquote>
+          <OnView opacity={0} speed={0.6} delay={0.4} y={50}>
+            <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+              <p>
+                “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                expedita voluptas culpa sapiente alias molestiae. Numquam
+                corrupti in laborum sed rerum et corporis.”
+              </p>
+            </blockquote>
+          </OnView>
           <figcaption className="mt-10">
             <img
               className="mx-auto h-10 w-10 rounded-full"

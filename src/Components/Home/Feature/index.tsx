@@ -1,3 +1,4 @@
+import OnView from "@/Components/Geral/OnView";
 import React from "react";
 
 export default function HomeFeature() {
@@ -19,7 +20,12 @@ export default function HomeFeature() {
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-            <div className="relative pl-16">
+            <OnView
+              opacity={0.5}
+              speed={0.75}
+              delay={0}
+              className="relative pl-16"
+            >
               <dt className="text-base font-semibold leading-7 text-gray-900">
                 <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
                   <svg
@@ -43,8 +49,13 @@ export default function HomeFeature() {
                 Morbi viverra dui mi arcu sed. Tellus semper adipiscing
                 suspendisse semper morbi. Odio urna massa nunc massa.
               </dd>
-            </div>
-            <div className="relative pl-16">
+            </OnView>
+            <OnView
+              opacity={0.5}
+              speed={0.75}
+              delay={0.15}
+              className="relative pl-16"
+            >
               <dt className="text-base font-semibold leading-7 text-gray-900">
                 <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
                   <svg
@@ -68,8 +79,13 @@ export default function HomeFeature() {
                 Sit quis amet rutrum tellus ullamcorper ultricies libero dolor
                 eget. Sem sodales gravida quam turpis enim lacus amet.
               </dd>
-            </div>
-            <div className="relative pl-16">
+            </OnView>
+            <OnView
+              opacity={0.5}
+              speed={0.75}
+              delay={0.15}
+              className="relative pl-16"
+            >
               <dt className="text-base font-semibold leading-7 text-gray-900">
                 <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
                   <svg
@@ -93,8 +109,13 @@ export default function HomeFeature() {
                 Quisque est vel vulputate cursus. Risus proin diam nunc commodo.
                 Lobortis auctor congue commodo diam neque.
               </dd>
-            </div>
-            <div className="relative pl-16">
+            </OnView>
+            <OnView
+              opacity={0.5}
+              speed={0.75}
+              delay={0.25}
+              className="relative pl-16"
+            >
               <dt className="text-base font-semibold leading-7 text-gray-900">
                 <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
                   <svg
@@ -118,7 +139,7 @@ export default function HomeFeature() {
                 Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis
                 aliquet hac quis. Id hac maecenas ac donec pharetra eget.
               </dd>
-            </div>
+            </OnView>
           </dl>
         </div>
       </div>

@@ -52,7 +52,7 @@ export default function Navbar() {
         </div>
         <motion.div
           className={
-            "items-center justify-between w-full md:flex md:w-auto md:order-1 md:flex-grow md:ml-10 md:pr-0 md:space-x-8 overflow-hidden " +
+            "items-center justify-center w-full md:flex md:w-auto md:order-1 md:flex-grow md:ml-10 md:pr-0 md:space-x-8 overflow-hidden " +
             (showSidebar ? "flex" : "hidden")
           }
           animate={{ height: showSidebar || windowWidth > 768 ? "auto" : 0 }}

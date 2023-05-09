@@ -1,39 +1,23 @@
+import OnView from "@/Components/Geral/OnView";
+
 const people = [
   {
-    name: "Leslie Alexander",
-    role: "Co-Founder / CEO",
+    name: "Ederson F Fagundes",
+    role: "Co-Fundador / CEO",
+    imageUrl:
+      "https://media.licdn.com/dms/image/D4D03AQEuOOYQqfUVvw/profile-displayphoto-shrink_800_800/0/1665242848815?e=1689206400&v=beta&t=Tl3EoomCrlLl-I6ca7RKsKoywAOOivTddUAV8RLUEfQ",
+  },
+  {
+    name: "Eliane Franzen",
+    role: "CFO",
     imageUrl:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
   {
-    name: "Leslie Alexander",
-    role: "Co-Founder / CEO",
+    name: "Jonathan B Fagundes",
+    role: "Desenvolvedor Full Stack",
     imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Co-Founder / CEO",
-    imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Co-Founder / CEO",
-    imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Co-Founder / CEO",
-    imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Co-Founder / CEO",
-    imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      "https://media.licdn.com/dms/image/C4E03AQGthaYvnEj8aQ/profile-displayphoto-shrink_400_400/0/1646957876924?e=1689206400&v=beta&t=DTOcQBWtdwvrFGVmePAzGw3Fquyha9gbCDxy96Si7HA",
   },
 ];
 
@@ -54,9 +38,9 @@ export default function HomeTeam() {
           role="list"
           className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
         >
-          {people.map((person) => (
+          {people.map((person, i) => (
             <li key={person.name}>
-              <div className="flex items-center gap-x-6">
+              <OnView delay={i * 0.1} className="flex items-center gap-x-6">
                 <img
                   className="h-16 w-16 rounded-full"
                   src={person.imageUrl}
@@ -70,7 +54,7 @@ export default function HomeTeam() {
                     {person.role}
                   </p>
                 </div>
-              </div>
+              </OnView>
             </li>
           ))}
         </ul>

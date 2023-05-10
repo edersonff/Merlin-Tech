@@ -1,3 +1,4 @@
+import Phone from "@/Components/Geral/3D/Phone";
 import HomeContact from "@/Components/Home/Contact";
 import HomeContentSection from "@/Components/Home/ContentSection";
 import HomeFeature from "@/Components/Home/Feature";
@@ -6,6 +7,7 @@ import HomeHero from "@/Components/Home/Hero";
 import HomeLogos from "@/Components/Home/Logos";
 import HomeStats from "@/Components/Home/Stats";
 import HomeTeam from "@/Components/Home/Team";
+import HomeTech from "@/Components/Home/Tech";
 import HomeTestimonials from "@/Components/Home/Testimonials";
 import HomeVertical from "@/Components/Home/Vertical";
 
@@ -14,7 +16,9 @@ export default function Home() {
     <>
       <HomeHero />
       <HomeVertical />
+      <Phone />
       <HomeFeature />
+      <HomeTech />
       <HomeStats />
       <HomeTestimonials />
       <HomeContentSection />

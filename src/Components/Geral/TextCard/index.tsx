@@ -8,13 +8,15 @@ export default function TextCard({
   align = "left",
 }: TextCardProps) {
   const marginLeft = pl ? "lg:pl-6" : "";
-  const justify = align === "left" ? "justify-start" : "justify-end";
+  const items = align === "left" ? "items-start" : "items-end";
 
   return (
     <div
-      className={`flex flex-1 flex-col gap-y-4 p-2 ${marginLeft} text-${align} ${justify}`}
+      className={`flex flex-1 flex-col gap-y-4 p-2 ${marginLeft} text-${align} ${items}`}
     >
-      <h1 className="text-5xl pr-12 font-semibold text-purple-900">{title}</h1>
+      <h3 className={`text-5xl lg:w-3/4 font-semibold text-purple-900`}>
+        {title}
+      </h3>
       <hr
         className="w-16 border-purple-900"
         style={{

@@ -10,8 +10,10 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Layout({ children }: LayoutProps) {
   return (
     <div className={inter.className}>
-      <HeaderContact />
-      <Navbar />
+      <div className="absolute top-0 left-0 w-full bg-black/5 backdrop-blur-sm z-10">
+        <HeaderContact />
+        <Navbar />
+      </div>
       <main>{children}</main>
       <Footer />
     </div>

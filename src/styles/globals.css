@@ -12,6 +12,14 @@
   padding: 0 40px!important;
 }
 
+.center{
+  @apply flex justify-center items-center;
+}
+
+.content{
+  @apply max-w-content w-full sm:mx-4 md:mx-8 lg:mx-16;
+}
+
 body {
   background-color: #fff;
 }

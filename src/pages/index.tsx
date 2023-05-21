@@ -21,6 +21,7 @@ export default function Home() {
             src={"/Images/Visual/Squares.svg"}
             width={150}
             height={150}
+            onDragStart={(e) => e.preventDefault()}
             alt="Squares"
             className="absolute -right-1 z-0"
           />
@@ -29,6 +30,7 @@ export default function Home() {
           src={"/Images/Visual/Circle-Outline-1.svg"}
           width={200}
           height={200}
+          onDragStart={(e) => e.preventDefault()}
           alt="Circle-Outline-1"
           className="absolute -left-1 z-0"
         />
@@ -37,6 +39,7 @@ export default function Home() {
             <Image
               width={300}
               height={300}
+              onDragStart={(e) => e.preventDefault()}
               src={"/Images/Illustrations/idea.svg"}
               alt="idea"
             />
@@ -50,6 +53,7 @@ export default function Home() {
         {/* background: linear-gradient(180deg, rgba(60, 45, 115, 0) 48.96%, rgba(60, 45, 115, 0.68) 100%), url(.jpg); */}
         <div className="w-full h-[500px] my-32 center relative bg-gradient-to-b from-transparent to-[#3C2D73]">
           <img
+            onDragStart={(e) => e.preventDefault()}
             src="/Images/BG/Two-Working.jpg"
             alt="Two-mans-working"
             className="absolute top-0 left-0 object-cover object-center filter brightness-50 w-full h-full"

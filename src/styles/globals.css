@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --swiper-navigation-sides-offset: 0px;
+  --swiper-navigation-size: 22px;
+  --swiper-navigation-color: #7239ce;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear!important;
+}
+
+.swiper-horizontal{
+  padding: 0 40px!important;
+}
+
+.center{
+  @apply flex justify-center items-center;
+}
+
+.content{
+  @apply max-w-content w-full sm:mx-4 md:mx-8 lg:mx-16;
+}
+
+.search-home:hover, .search-home:active{
+  box-shadow: 0 0 0 0px;
+  top: 5px;
+  left: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
 body {
   background-color: #fff;
 }

@@ -55,7 +55,7 @@ export default function HomeTech() {
                   draggable={false}
                   onDragStart={(e) => e.preventDefault()}
                 />
-                <span className="mt-2 text-sm text-gray-500">{tech.name}</span>
+                <span className="mt-2 text-sm text-gray-500">{tech}</span>
               </div>
             </SwiperSlide>
           ))}

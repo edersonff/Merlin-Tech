@@ -76,7 +76,7 @@ export default function HomeContentSection() {
                 sed amet vitae sed turpis id.
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
-                <OnView delay={0} speed={0.6}>
+                <OnView>
                   <li className="flex gap-x-3">
                     <CloudArrowUpIcon
                       className="mt-1 h-5 w-5 flex-none text-indigo-600"
@@ -92,7 +92,7 @@ export default function HomeContentSection() {
                     </span>
                   </li>
                 </OnView>
-                <OnView delay={0.2} speed={0.6}>
+                <OnView>
                   <li className="flex gap-x-3">
                     <LockClosedIcon
                       className="mt-1 h-5 w-5 flex-none text-indigo-600"
@@ -107,7 +107,7 @@ export default function HomeContentSection() {
                     </span>
                   </li>
                 </OnView>
-                <OnView delay={0.4} speed={0.6}>
+                <OnView>
                   <li className="flex gap-x-3">
                     <ServerIcon
                       className="mt-1 h-5 w-5 flex-none text-indigo-600"

@@ -20,12 +20,7 @@ export default function HomeFeature() {
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-            <OnView
-              opacity={0.5}
-              speed={0.75}
-              delay={0}
-              className="relative pl-16"
-            >
+            <OnView className="relative pl-16">
               <dt className="text-base font-semibold leading-7 text-gray-900">
                 <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
                   <svg
@@ -50,12 +45,7 @@ export default function HomeFeature() {
                 suspendisse semper morbi. Odio urna massa nunc massa.
               </dd>
             </OnView>
-            <OnView
-              opacity={0.5}
-              speed={0.75}
-              delay={0.15}
-              className="relative pl-16"
-            >
+            <OnView className="relative pl-16">
               <dt className="text-base font-semibold leading-7 text-gray-900">
                 <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
                   <svg
@@ -80,12 +70,7 @@ export default function HomeFeature() {
                 eget. Sem sodales gravida quam turpis enim lacus amet.
               </dd>
             </OnView>
-            <OnView
-              opacity={0.5}
-              speed={0.75}
-              delay={0.15}
-              className="relative pl-16"
-            >
+            <OnView className="relative pl-16">
               <dt className="text-base font-semibold leading-7 text-gray-900">
                 <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
                   <svg
@@ -110,12 +95,7 @@ export default function HomeFeature() {
                 Lobortis auctor congue commodo diam neque.
               </dd>
             </OnView>
-            <OnView
-              opacity={0.5}
-              speed={0.75}
-              delay={0.25}
-              className="relative pl-16"
-            >
+            <OnView className="relative pl-16">
               <dt className="text-base font-semibold leading-7 text-gray-900">
                 <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
                   <svg

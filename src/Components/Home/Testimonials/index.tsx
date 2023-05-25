@@ -12,7 +12,7 @@ export default function HomeTestimonials() {
           alt=""
         />
         <figure className="mt-10">
-          <OnView opacity={0} speed={0.6} delay={0.4} y={50}>
+          <OnView>
             <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
               <p>
                 “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo

@@ -1,12 +1,5 @@
 import React from "react";
 import {
-  PhoneIcon,
-  RocketLaunchIcon,
-  ShieldCheckIcon,
-  UserGroupIcon,
-  ViewGridIcon,
-  XIcon,
-  XCircleIcon,
   XCircleIcon as XCircleIconSolid,
   MapPinIcon,
   ChatBubbleOvalLeftIcon,

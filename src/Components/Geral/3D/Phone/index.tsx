@@ -16,7 +16,7 @@ export default function Phone({ show = false }: { show?: boolean }) {
 }
 
 function PhoneMesh() {
-  const meshRef = useRef<Mesh>();
+  const meshRef = useRef<any>();
   const gltf = useLoader(GLTFLoader, "./phone.glb");
 
   useFrame(() => {

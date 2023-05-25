@@ -40,7 +40,7 @@ export default function HomeTeam() {
         >
           {people.map((person, i) => (
             <li key={person.name}>
-              <OnView delay={i * 0.1} className="flex items-center gap-x-6">
+              <OnView className="flex items-center gap-x-6">
                 <img
                   className="h-16 w-16 rounded-full"
                   src={person.imageUrl}

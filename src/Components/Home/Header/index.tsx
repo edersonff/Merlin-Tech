@@ -65,11 +65,7 @@ export default function HomeHeader() {
           </div>
           <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat, i) => (
-              <OnView
-                delay={i * 0.15}
-                key={stat.name}
-                className="flex flex-col-reverse"
-              >
+              <OnView key={stat.name} className="flex flex-col-reverse">
                 <dt className="text-base leading-7 text-gray-300">
                   {stat.name}
                 </dt>

@@ -17,7 +17,7 @@ export default function Phone({ show = false }: { show?: boolean }) {
 
 function PhoneMesh() {
   const meshRef = useRef<any>();
-  const gltf = useLoader(GLTFLoader, "./phone.glb");
+  const gltf = useLoader(GLTFLoader, "./Phone.glb");
 
   useFrame(() => {
     if (meshRef?.current?.rotateY) {

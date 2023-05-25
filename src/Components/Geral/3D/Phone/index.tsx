@@ -1,74 +1,33 @@
-import { Canvas, MeshProps, useFrame } from "@react-three/fiber";
-import React, { useRef, useEffect } from "react";
-import { Stats, OrbitControls } from "@react-three/drei";
-import { useLoader } from "@react-three/fiber";
+import { useFrame, useLoader } from "@react-three/fiber";
+import React, { useRef } from "react";
+import Show3D from "../Show";
+import { Mesh } from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { useInView, useSpring, motion } from "framer-motion";
 
 const WIDTH = 375;
 const HEIGHT = 812;
 
-export default function Phone() {
-  const orbitControlsRef = useRef<OrbitControls>();
-  const containerRef = useRef<React.PropsWithChildren<HTMLDivElement>>(null);
-  const inViewRef = useInView(containerRef);
-  const containerXSpring = useSpring(0, { damping: 10, stiffness: 100 });
-
-  useEffect(() => {
-    const presetOrbitControls = () => {
-      orbitControlsRef.current.minDistance = 3;
-      orbitControlsRef.current.maxDistance = 6;
-      orbitControlsRef.current.enablePan = false;
-    };
-    if (!orbitControlsRef?.current) return;
-    presetOrbitControls();
-  }, [orbitControlsRef]);
-
-  useEffect(() => {
-    const animatePhone = () => {
-      if (!inViewRef) return;
-      containerXSpring.set(WIDTH);
-    };
-    animatePhone();
-  }, [inViewRef, containerXSpring]);
-
+export default function Phone({ show = false }: { show?: boolean }) {
   return (
-    <div className="relative" ref={containerRef}>
-      <motion.div
-        className="absolute"
-        animate={{
-          x: containerXSpring.get(),
-        }}
-        initial={{
-          left: -WIDTH,
-        }}
-        transition={{
-          duration: 2,
-          ease: "easeInOut",
-        }}
-      >
-        <Canvas id="phone-canvas" style={{ width: WIDTH, height: HEIGHT }}>
-          <OrbitControls ref={orbitControlsRef} />
-          <Mesh />
-          <ambientLight intensity={0.5} />
-          <directionalLight color="red" position={[0, 0, 5]} />
-        </Canvas>
-      </motion.div>
-    </div>
+    <Show3D width={WIDTH} height={HEIGHT} show={true}>
+      <PhoneMesh />
+    </Show3D>
   );
 }
 
-export function Mesh() {
-  const meshRef = useRef<MeshProps>();
-  useFrame(({ clock }) => {
+function PhoneMesh() {
+  const meshRef = useRef<Mesh>();
+  const gltf = useLoader(GLTFLoader, "./phone.glb");
+
+  useFrame(() => {
     if (meshRef?.current?.rotateY) {
-      meshRef.current.rotateY(0.01);
+      meshRef.current.rotateY(0.005);
     }
   });
 
   return (
-    <mesh ref={meshRef}>
-      <boxGeometry args={[1, 1, 1]} />
+    <mesh ref={meshRef} scale={1.5}>
+      <primitive object={gltf.scene} />
       <meshStandardMaterial color="hotpink" />
     </mesh>
   );

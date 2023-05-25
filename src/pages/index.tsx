@@ -6,12 +6,14 @@ import { ArrowDownIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import OnView from "@/Components/Geral/OnView";
+import HomeProjects from "@/Components/Home/Projects";
+import Gallery from "@/Components/Home/Galerry";
 
 export default function Home() {
   return (
     <>
       <HomeVideo />
-      <div className="relative -top-5 z-10 w-full rounded-3xl bg-white pb-4 pt-10 text-black">
+      <div className="relative -top-5 z-10 w-full rounded-3xl bg-gray-50 pb-4 pt-10 text-black">
         <OnView>
           <HomeSearch />
         </OnView>
@@ -84,6 +86,8 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="rounded-full absolute -left-48 transform -translate-y-2/3 bg-white p-64 flex items-center justify-center -z-20" />
+
         <div className="center mb-32">
           <div className="content mx-auto flex items-end flex-wrap justify-center">
             <TextCard
@@ -105,8 +109,8 @@ export default function Home() {
         </div>
 
         <div className="center mb-14">
-          <div className="content flex justify-center">
-            <div className="flex-1 flex flex-col gap-y-4 pr-8">
+          <div className="content flex justify-center flex-wrap px-4 gap-x-8">
+            <div className="flex-1 flex flex-col gap-y-4">
               <h4 className="text-3xl font-bold">
                 Maximize seus investimentos com tecnologia e processos
                 eficientes.
@@ -118,7 +122,7 @@ export default function Home() {
                 alt="Two-mans-working"
               />
             </div>
-            <div className="flex-1 flex flex-col gap-y-4 justify-between h-full">
+            <div className="flex-1 flex flex-col gap-y-4 justify-between">
               <div className="flex flex-col gap-y-4">
                 <h4 className="text-4xl font-bold">Serviços</h4>
                 <p className="text-justify text-lg font-light leading-8">
@@ -130,6 +134,53 @@ export default function Home() {
               </div>
               <ThreeDItems />
             </div>
+          </div>
+        </div>
+
+        <div className="center flex-col text-center mt-32">
+          <div className="content mx-auto">
+            <h2 className="text-4xl font-semibold text-purple-900">
+              Nossos Produtos
+            </h2>
+          </div>
+          <div className="border-t-2 border-b-2 border-gray-300 mb-8 pt-1 pb-32 bg-white w-full">
+            <div className="mb-10">
+              <p className="text-2xl font-light leading-8">
+                Veja alguns de nossos últimos trabalhos, todos desenvolvidos
+                <br />
+                sob-medida para cada empresa.
+              </p>
+            </div>
+            <HomeProjects invert />
+          </div>
+          <HomeProjects className="relative -top-32" />
+        </div>
+
+        <div
+          className="w-full bg-gradient-to-b
+         from-[#885CD0] to-[#7579FF] text-white"
+        >
+          <div className="center">
+            <div className="content flex flex-col items-center justify-center py-14">
+              <h2 className="text-5xl font-semibold text-center">
+                Vamos trabalhar juntos?
+              </h2>
+              <p className="text-center text-lg font-light leading-8 mt-4">
+                Entre em contato com a gente pelo email{" "}
+                <a
+                  href="mailto:teste@teste.com"
+                  className="text-purple-300 hover:text-purple-400"
+                >
+                  teste@teste.com
+                </a>{" "}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="center my-32">
+          <div className="content flex flex-col items-center justify-center">
+            <Gallery />
           </div>
         </div>
       </div>

@@ -1,14 +1,22 @@
 export const tabs = [
   {
-    name: "Inicio",
+    name: "Quem somos",
     path: "/",
   },
   {
-    name: "Sobre",
-    path: "/about",
+    name: "Outsourcing de TI",
+    path: "/outsourcing",
+  },
+  {
+    name: "Fábrica de Software",
+    path: "/fabrica",
+  },
+  {
+    name: "Consultoria",
+    path: "/consultoria",
   },
   {
     name: "Contato",
-    path: "/contact",
+    path: "/contato",
   },
 ];

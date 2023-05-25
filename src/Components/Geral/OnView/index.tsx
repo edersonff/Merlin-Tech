@@ -5,17 +5,13 @@ import { MotionProps } from "framer-motion";
 
 export default function OnView({
   children,
-  opacity = 0,
-  delay,
-  speed,
-  y = 40,
   ...props
 }: OnViewProps & MotionProps & React.HTMLAttributes<HTMLDivElement>) {
   return (
     <motion.div
-      animate={{ opacity, y }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: delay, duration: speed, ease: "easeOut" }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      initial={{ scale: 0.8, opacity: 0 }}
+      transition={{ duration: 0.3, delay: 0.4 }}
       viewport={{ once: true }}
       {...props}
     >

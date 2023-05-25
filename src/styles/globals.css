@@ -8,6 +8,10 @@
   --swiper-navigation-color: #7239ce;
 }
 
+.swiper-wrapper {
+  transition-timing-function: linear!important;
+}
+
 .swiper-horizontal{
   padding: 0 40px!important;
 }

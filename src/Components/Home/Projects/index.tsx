@@ -34,18 +34,23 @@ export default function HomeProjects({
       breakpoints={{
         0: {
           slidesPerView: 1,
+          spaceBetween: 0,
         },
         640: {
           slidesPerView: 2,
+          spaceBetween: 5,
         },
         768: {
           slidesPerView: 3,
+          spaceBetween: 10,
         },
         1024: {
           slidesPerView: 4,
+          spaceBetween: 10,
         },
         1280: {
           slidesPerView: 5,
+          spaceBetween: 10,
         },
       }}
       spaceBetween={10}

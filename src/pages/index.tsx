@@ -8,12 +8,13 @@ import { motion } from "framer-motion";
 import OnView from "@/Components/Geral/OnView";
 import HomeProjects from "@/Components/Home/Projects";
 import Gallery from "@/Components/Home/Galerry";
+import HomeTech from "@/Components/Home/Tech";
 
 export default function Home() {
   return (
     <>
       <HomeVideo />
-      <div className="relative -top-5 z-10 w-full rounded-3xl bg-gray-50 pb-4 pt-10 text-black">
+      <div className="relative -top-5 z-10 w-full rounded-3xl bg-gray-50 pt-10 text-black overflow-x-hidden">
         <OnView>
           <HomeSearch />
         </OnView>
@@ -37,11 +38,11 @@ export default function Home() {
 
         <Image
           src={"/Images/Visual/Circle-Outline-1.svg"}
-          width={200}
-          height={200}
+          width={250}
+          height={250}
           onDragStart={(e) => e.preventDefault()}
           alt="Circle-Outline-1"
-          className="absolute -left-1 z-0"
+          className="absolute -left-1 z-0 transform -translate-y-[50px]"
         />
 
         <div className="center mt-14">
@@ -178,9 +179,105 @@ export default function Home() {
           </div>
         </div>
 
+        <Image
+          src={"/Images/Visual/Circle-Outline-2.svg"}
+          width={200}
+          height={200}
+          onDragStart={(e) => e.preventDefault()}
+          alt="Circle-Outline-1"
+          className="absolute -right-1 z-0 transform translate-y-[150px]"
+        />
+
         <div className="center my-32">
           <div className="content flex flex-col items-center justify-center">
             <Gallery />
+          </div>
+        </div>
+
+        <Image
+          src={"/Images/Visual/Circles.svg"}
+          width={150}
+          height={150}
+          onDragStart={(e) => e.preventDefault()}
+          alt="Squares"
+          className="absolute left-2 transofrm -translate-y-[250px] -z-10"
+        />
+
+        <div className="center my-32 w-full">
+          <div className="content">
+            <div className="flex flex-wrap gap-16">
+              <HomeTech />
+            </div>
+          </div>
+        </div>
+
+        <div className="center pt-32 bg-white border-b-2 border-gray-50">
+          <div className="content">
+            <div className="flex flex-col items-center justify-center">
+              <h4 className="text-2xl font-light text-center w-3/4 mb-10">
+                Ajudamos a otimizar a gestão de empresas e de seus projetos para
+                você ter liberdade para sonhar, empreender e viver! Vem
+                conversar com a gente
+              </h4>
+            </div>
+            <div className="flex gap-x-32 my-10">
+              <div className="flex-1">
+                <h3 className="text-3xl font-medium">Entre em contato</h3>
+
+                <div className="flex flex-col gap-y-4 mt-4 w-full">
+                  <div className="flex flex-col gap-y-4 items-center w-full">
+                    <div className="w-full">
+                      <label htmlFor="name" className="block text-sm mb-2">
+                        Nome
+                        <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        className="border-2 border-gray-300 bg-gray-50 rounded-md p-2 w-full text-sm"
+                        placeholder="Escreva seu nome"
+                      />
+                    </div>
+                    <div className="w-full">
+                      <label htmlFor="company" className="block text-sm mb-2">
+                        Empresa
+                      </label>
+                      <input
+                        type="text"
+                        name="company"
+                        id="company"
+                        className="border-2 border-gray-300 bg-gray-50 rounded-md p-2 w-full text-sm"
+                        placeholder="Escreva o nome da sua empresa"
+                      />
+                    </div>
+                    <div className="w-full">
+                      <label htmlFor="message" className="block text-sm mb-2">
+                        Mensagem
+                      </label>
+                      <textarea
+                        name="message"
+                        id="message"
+                        className="border-2 border-gray-300 bg-gray-50 rounded-md p-2 h-40 w-full text-sm min-h-[100px] max-h-[200px]"
+                        placeholder="Eu gostaria de falar sobre..."
+                      />
+                    </div>
+                    <button className="bg-purple-800 text-white rounded-md py-3 px-8 text-sm w-full">
+                      Enviar
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="flex-1">
+                <Image
+                  src="/Merlin/Logo.png"
+                  width={160}
+                  height={160}
+                  alt="Merlin Logo"
+                  className="mt-10"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

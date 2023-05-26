@@ -9,7 +9,7 @@ const HEIGHT = 812;
 
 export default function Phone({ show = false }: { show?: boolean }) {
   return (
-    <Show3D width={WIDTH} height={HEIGHT} show={true}>
+    <Show3D width={WIDTH} height={HEIGHT} show={show}>
       <PhoneMesh />
     </Show3D>
   );

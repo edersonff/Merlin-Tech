@@ -21,7 +21,8 @@ export default function HomeProjects({
   return (
     <Swiper
       className={
-        "w-full h-full transform projects-slider select-none" + className
+        "w-full h-full transform projects-slider select-none projects " +
+        className
       }
       slidesPerView={5}
       autoplay={{

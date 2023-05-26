@@ -77,7 +77,6 @@ export default function HomeTech() {
             <div
               className="flex flex-col items-center justify-center select-none"
               onMouseOver={() => {
-                console.log(color, image);
                 handleMouseOver(color)();
               }}
             >

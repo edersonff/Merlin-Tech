@@ -3,4 +3,5 @@ export type Show3DProps = {
   width: number;
   height: number;
   show?: boolean;
+  right?: boolean;
 };

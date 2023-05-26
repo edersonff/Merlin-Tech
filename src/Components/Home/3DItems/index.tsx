@@ -1,3 +1,4 @@
+import Laptop from "@/Components/Geral/3D/Laptop";
 import Phone from "@/Components/Geral/3D/Phone";
 import {
   BuildingOfficeIcon,
@@ -6,10 +7,22 @@ import {
   DevicePhoneMobileIcon,
   PhoneIcon,
 } from "@heroicons/react/20/solid";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function ThreeDItems() {
   const [showItem, setShowItem] = useState(-1);
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const handleDimiss = () => {
     setShowItem(-1);
@@ -24,9 +37,12 @@ export default function ThreeDItems() {
   return (
     <div className="flex justify-between">
       <div className="absolute left-0 w-full">
-        <div className="relative w-full">
-          <Phone show={showItem === 0} />
-        </div>
+        {width > 768 && (
+          <div className="relative w-full -top-96">
+            <Phone show={showItem === 0} />
+            <Laptop show={showItem === 1} />
+          </div>
+        )}
       </div>
       <ThreeItem onMouseEnter={handleSetItem(0)}>
         <DevicePhoneMobileIcon className="w-12 h-12" />

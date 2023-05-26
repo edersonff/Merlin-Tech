@@ -38,11 +38,11 @@ export default function Home() {
 
         <Image
           src={"/Images/Visual/Circle-Outline-1.svg"}
-          width={200}
-          height={200}
+          width={250}
+          height={250}
           onDragStart={(e) => e.preventDefault()}
           alt="Circle-Outline-1"
-          className="absolute -left-1 z-0"
+          className="absolute -left-1 z-0 transform -translate-y-[50px]"
         />
 
         <div className="center mt-14">
@@ -179,11 +179,29 @@ export default function Home() {
           </div>
         </div>
 
+        <Image
+          src={"/Images/Visual/Circle-Outline-2.svg"}
+          width={200}
+          height={200}
+          onDragStart={(e) => e.preventDefault()}
+          alt="Circle-Outline-1"
+          className="absolute -right-1 z-0 transform translate-y-[150px]"
+        />
+
         <div className="center my-32">
           <div className="content flex flex-col items-center justify-center">
             <Gallery />
           </div>
         </div>
+
+        <Image
+          src={"/Images/Visual/Circles.svg"}
+          width={150}
+          height={150}
+          onDragStart={(e) => e.preventDefault()}
+          alt="Squares"
+          className="absolute left-2 transofrm -translate-y-[250px] -z-10"
+        />
 
         <div className="center my-32 w-full">
           <div className="content">
@@ -196,7 +214,7 @@ export default function Home() {
         <div className="center pt-32 bg-white border-b-2 border-gray-50">
           <div className="content">
             <div className="flex flex-col items-center justify-center">
-              <h4 className="text-2xl font-light text-center w-3/4">
+              <h4 className="text-2xl font-light text-center w-3/4 mb-10">
                 Ajudamos a otimizar a gestão de empresas e de seus projetos para
                 você ter liberdade para sonhar, empreender e viver! Vem
                 conversar com a gente
@@ -240,7 +258,7 @@ export default function Home() {
                       <textarea
                         name="message"
                         id="message"
-                        className="border-2 border-gray-300 bg-gray-50 rounded-md p-2 h-40 w-full text-sm"
+                        className="border-2 border-gray-300 bg-gray-50 rounded-md p-2 h-40 w-full text-sm min-h-[100px] max-h-[200px]"
                         placeholder="Eu gostaria de falar sobre..."
                       />
                     </div>

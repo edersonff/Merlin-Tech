@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Gallery() {
   return (
-    <div className="flex flex-col gap-y-10 bg-red-100 w-full">
+    <div className="flex flex-col gap-y-10 w-full">
       <div className="flex">
         <div className="w-80 relative">
           <div className="relative w-96 p-10 rounded-4xl bg-gradient-to-r from-purple-700 to-purple-500 text-white">

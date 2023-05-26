@@ -6,7 +6,7 @@ export const TechData = [
   { image: "tools/unity.png", color: "#000000" },
 
   { image: "programming languages/csharp.svg", color: "#9A4993" },
-  { image: "programming languages/java.svg", color: "#0074BD" },
+  { image: "programming languages/java.svg", color: "#EA2D2E" },
   { image: "programming languages/javascript.svg", color: "#F7DF1E" },
   { image: "programming languages/php.png", color: "#777BB3" },
   { image: "programming languages/python.svg", color: "#0277BD" },

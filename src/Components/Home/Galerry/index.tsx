@@ -20,26 +20,26 @@ export default function Gallery() {
         <div
           className="flex-1 w-full h-96 bg-center bg-cover rounded-4xl"
           style={{
-            backgroundImage: "url(/images/Examples/01.jpg)",
+            backgroundImage: "url(/Images/Examples/01.jpg)",
           }}
         />
       </div>
       <div className="flex justify-center lg:justify-between flex-wrap gap-2">
         <div
           style={{
-            backgroundImage: "url(/images/Examples/02.jpg)",
+            backgroundImage: "url(/Images/Examples/02.jpg)",
           }}
           className="w-full lg:w-72 h-80 bg-center bg-cover rounded-4xl"
         />
         <div
           style={{
-            backgroundImage: "url(/images/Examples/03.jpg)",
+            backgroundImage: "url(/Images/Examples/03.jpg)",
           }}
           className="w-full lg:w-72 h-80 bg-center bg-cover rounded-4xl"
         />
         <div
           style={{
-            backgroundImage: "url(/images/Illustrations/card.svg)",
+            backgroundImage: "url(/Images/Illustrations/card.svg)",
           }}
           className="lg:block hidden w-72 h-80 bg-cover rounded-4xl"
         />

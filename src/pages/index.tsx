@@ -41,9 +41,6 @@ export default function Home() {
         <meta name="og:type" content="website" />
         <link rel="canonical" href="https://merlin.app.br/" />
       </Head>
-      <h1 className="hidden">
-        Merlin - Empresa de tecnologia de Jaraguá do Sul
-      </h1>
       <HomeVideo />
       <div className="relative -top-5 z-10 w-full rounded-3xl bg-gray-50 pt-10 text-black overflow-x-hidden">
         <OnView>

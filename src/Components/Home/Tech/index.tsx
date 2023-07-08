@@ -5,7 +5,7 @@ import { TechData as techData } from "./data";
 import SwiperCore, { Autoplay } from "swiper";
 import Image from "next/image";
 
-const BASEPATH = "/Tech/";
+const BASEPATH = "/tech/";
 
 export default function HomeTech() {
   const [titleColor, setTitleColor] = useState("#000");

@@ -35,7 +35,7 @@ export default function Home() {
         />
         <meta
           name="og:image"
-          content="https://merlin.app.br/Images/Banner/01.png"
+          content="https://merlin.app.br/images/banner/01.png"
         />
         <meta name="og:url" content="https://merlin.app.br/" />
         <meta name="og:type" content="website" />
@@ -58,7 +58,7 @@ export default function Home() {
             />
           </div>
           <Image
-            src={"/Images/Visual/Squares.svg"}
+            src={"/images/visual/Squares.svg"}
             width={150}
             height={150}
             onDragStart={(e) => e.preventDefault()}
@@ -69,7 +69,7 @@ export default function Home() {
         </div>
 
         <Image
-          src={"/Images/Visual/Circle-Outline-1.svg"}
+          src={"/images/visual/Circle-Outline-1.svg"}
           width={250}
           height={250}
           onDragStart={(e) => e.preventDefault()}
@@ -85,7 +85,7 @@ export default function Home() {
                 width={300}
                 height={300}
                 onDragStart={(e) => e.preventDefault()}
-                src={"/Images/Illustrations/idea.svg"}
+                src={"/images/illustrations/idea.svg"}
                 alt="Ilustração de uma ideia"
                 title="Ilustração de uma ideia"
               />
@@ -101,7 +101,7 @@ export default function Home() {
         <div className="w-full h-[500px] my-32 center relative bg-gradient-to-b from-transparent to-[rgba(60,45,115,0.68)] text-white">
           <Image
             onDragStart={(e) => e.preventDefault()}
-            src="/Images/BG/Two-Working.webp"
+            src="/images/bg/Two-Working.webp"
             alt="Espaço de trabalho com duas pessoas"
             title="Espaço de trabalho com duas pessoas"
             width={1280}
@@ -145,7 +145,7 @@ export default function Home() {
                 width={300}
                 height={300}
                 onDragStart={(e) => e.preventDefault()}
-                src={"/Images/Illustrations/office.svg"}
+                src={"/images/illustrations/office.svg"}
                 alt="Illustração de um escritório"
                 title="Illustração de um escritório"
               />
@@ -179,7 +179,7 @@ export default function Home() {
                   height={500}
                   className="w-full h-full object-cover object-center"
                   onDragStart={(e) => e.preventDefault()}
-                  src="/Images/Banner/02.webp"
+                  src="/images/banner/02.webp"
                   alt="Nosso escritório Jaraguá do Sul"
                   title="Nosso escritório Jaraguá do Sul"
                 />
@@ -241,7 +241,7 @@ export default function Home() {
         </div>
 
         <Image
-          src={"/Images/Visual/Circle-Outline-2.svg"}
+          src={"/images/visual/Circle-Outline-2.svg"}
           width={200}
           height={200}
           onDragStart={(e) => e.preventDefault()}
@@ -257,7 +257,7 @@ export default function Home() {
         </div>
 
         <Image
-          src={"/Images/Visual/Circles.svg"}
+          src={"/images/visual/Circles.svg"}
           width={150}
           height={150}
           onDragStart={(e) => e.preventDefault()}

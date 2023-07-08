@@ -18,7 +18,7 @@ export default function Navbar() {
       <div className="content flex flex-wrap items-center justify-between py-4">
         <a href="https://Merlin.com/" className="flex items-center">
           <Image
-            src="/Merlin/Logo-w.png"
+            src="/merlin/Logo-w.png"
             width={130}
             height={130}
             alt="Merlin Logo"

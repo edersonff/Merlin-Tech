@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="mb-6 md:mb-0">
               <a href="https://Merlin.com/" className="flex items-center">
                 <Image
-                  src="/Merlin/Logo.png"
+                  src="/merlin/Logo.png"
                   width={160}
                   height={160}
                   alt="Merlin Logo"

@@ -73,7 +73,7 @@ export function ThreeItem({
       <Image
         className="w-full h-full object-cover object-center absolute top-0 left-0 -z-10"
         onDragStart={(e) => e.preventDefault()}
-        src={"/Images/Visual/UnlinedCircle.svg"}
+        src={"/images/visual/UnlinedCircle.svg"}
         alt="Ilustração de um círculo"
         title="Ilustração de um círculo"
         width={100}

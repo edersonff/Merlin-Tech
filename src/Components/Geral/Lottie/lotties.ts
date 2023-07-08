@@ -1,3 +1,3 @@
 export const lotties = {
-  loading: require("../../../../public/Static/Lottie/dots-loading.json"),
+  loading: require("../../../../public/static/lottie/dots-loading.json"),
 };

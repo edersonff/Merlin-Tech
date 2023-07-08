@@ -89,7 +89,7 @@ export default function HomeContact() {
         </div>
         <div className="flex-1 lg:block hidden">
           <Image
-            src="/Merlin/Logo.png"
+            src="/merlin/Logo.png"
             width={160}
             height={160}
             alt="Merlin Logo"

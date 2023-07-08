@@ -51,7 +51,7 @@ function Video({ isLoading, onLoaded }: VideoProps) {
       playsInline
       onPlay={onLoaded}
     >
-      <source src="/Videos/PlanningProject.mp4" type="video/mp4" />
+      <source src="/videos/PlanningProject.mp4" type="video/mp4" />
     </video>
   );
 }

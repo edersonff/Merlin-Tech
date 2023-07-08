@@ -156,7 +156,6 @@ export default function Home() {
               <h3 className="text-3xl font-bold">
                 Aumente o retorno dos seus investimentos com tecnologia
               </h3>
-              {/* willy dorow 29, Jaraguá do Sul, SC */}
               <a
                 href={
                   "https://www.google.com/maps/place/" +

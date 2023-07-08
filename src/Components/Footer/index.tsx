@@ -14,6 +14,7 @@ export default function Footer() {
                   width={160}
                   height={160}
                   alt="Merlin Logo"
+                  title="Merlin Logo"
                 />
               </a>
             </div>

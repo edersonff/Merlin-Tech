@@ -10,10 +10,10 @@ export default function Gallery() {
               Nosso espaço
             </h3>
             <p className="text-base font-light">
-              Ele também pode ser aí, na sua casa. Estamos conectados pela
-              tecnologia que nos permite estar em qualquer lugar. Ele também
-              pode ser aí, na sua casa. Estamos conectados pela tecnologia que
-              nos permite estar em qualquer lugar.
+              A Merlin conecta você ao ambiente digital, independentemente da
+              sua localização física. Transforme o seu espaço em um ambiente
+              digital com as nossas soluções inovadoras. Conte com a nossa
+              expertise para alcançar o sucesso, onde quer que você esteja.
             </p>
           </div>
         </div>

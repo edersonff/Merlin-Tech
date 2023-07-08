@@ -50,7 +50,7 @@ export default function Home() {
           <HomeSearch />
         </OnView>
 
-        <div className="center mt-14">
+        <div className="center mt-14" id="quem-somos">
           <div className="content mx-auto">
             <TextCard
               title="Quem somos?"
@@ -78,7 +78,7 @@ export default function Home() {
           className="absolute -left-1 z-0 transform -translate-y-[50px]"
         />
 
-        <div className="center mt-14">
+        <div className="center mt-14" id="desenvolva">
           <div className="content mx-auto flex items-end flex-wrap justify-center">
             <OnView>
               <Image
@@ -108,7 +108,10 @@ export default function Home() {
             height={720}
             className="absolute top-0 left-0 object-cover object-center w-full h-full -z-10"
           />
-          <div className="content flex flex-col justify-end w-full h-full py-16">
+          <div
+            className="content flex flex-col justify-end w-full h-full py-16"
+            id="segmentos"
+          >
             <div className="flex flex-col items-start gap-y-4 lg:w-3/4">
               <h3 className="text-5xl font-semibold">Diversos segmentos</h3>
               <p>
@@ -199,7 +202,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="center flex-col text-center mt-44">
+        <div className="center flex-col text-center mt-44" id="produtos">
           <div className="content mx-auto">
             <h2 className="text-4xl font-semibold text-purple-900 mb-2">
               Nossos Produtos
@@ -218,10 +221,7 @@ export default function Home() {
           <HomeProjects className="relative -top-32" />
         </div>
 
-        <div
-          className="w-full bg-gradient-to-b
-         from-[#885CD0] to-[#7579FF] text-white"
-        >
+        <div className="w-full bg-gradient-to-b from-[#885CD0] to-[#7579FF] text-white">
           <div className="center">
             <div className="content flex flex-col items-center justify-center py-14">
               <h2 className="text-5xl font-semibold text-center">
@@ -230,10 +230,10 @@ export default function Home() {
               <p className="text-center text-lg font-light leading-8 mt-4">
                 Entre em contato com a gente pelo email{" "}
                 <a
-                  href="mailto:teste@teste.com"
+                  href="mailto:contato@merlin.app.br"
                   className="text-purple-300 hover:text-purple-400"
                 >
-                  teste@teste.com
+                  contato@merlin.app.br
                 </a>{" "}
               </p>
             </div>
@@ -274,13 +274,19 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="center pt-32 bg-white border-b-2 border-gray-50">
+        <div
+          className="center pt-32 bg-white border-b-2 border-gray-50"
+          id="contato"
+        >
           <HomeContact />
         </div>
       </div>
       <WhatsappBtn>
-        Que tal <b>anunciar</b> em nossa plataforma gratuitamente?{" "}
-        <span className="text-primary-500">😊</span>
+        <p className="text-sm text-black">
+          Quer tirar suas ideias do papel?{" "}
+          <span className="text-primary-500">Fale com a gente!</span>{" "}
+          <span className="text-primary-500">😊</span>
+        </p>
       </WhatsappBtn>
     </>
   );

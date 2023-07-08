@@ -8,12 +8,13 @@ export default function Footer() {
         <div className="center">
           <div className="md:flex md:justify-between content">
             <div className="mb-6 md:mb-0">
-              <a href="https://Merlin.com/" className="flex items-center">
+              <a href="https://merlin.app.br/" className="flex items-center">
                 <Image
-                  src="/Merlin/Logo.png"
+                  src="/merlin/Logo.png"
                   width={160}
                   height={160}
                   alt="Merlin Logo"
+                  title="Merlin Logo"
                 />
               </a>
             </div>
@@ -24,16 +25,19 @@ export default function Footer() {
                 </h2>
                 <ul className="text-gray-600  font-medium">
                   <li className="mb-4">
-                    <a href="https://Merlin.com/" className="hover:underline">
+                    <a
+                      href="https://merlin.app.br/"
+                      className="hover:underline"
+                    >
                       Merlin
                     </a>
                   </li>
                   <li>
                     <a
-                      href="https://tailwindcss.com/"
+                      href="https://www.guiajaragua.com/"
                       className="hover:underline"
                     >
-                      Merlin
+                      Guia Jaraguá
                     </a>
                   </li>
                 </ul>
@@ -45,18 +49,15 @@ export default function Footer() {
                 <ul className="text-gray-600  font-medium">
                   <li className="mb-4">
                     <a
-                      href="https://github.com/themesberg/Merlin"
+                      href="https://www.instagram.com/merlin.sistema/"
                       className="hover:underline "
                     >
-                      Github
+                      Instagram
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="https://discord.gg/4eeurUVvTy"
-                      className="hover:underline"
-                    >
-                      Discord
+                    <a href="https://facebook.com/" className="hover:underline">
+                      Facebook
                     </a>
                   </li>
                 </ul>
@@ -68,12 +69,12 @@ export default function Footer() {
                 <ul className="text-gray-600  font-medium">
                   <li className="mb-4">
                     <a href="#" className="hover:underline">
-                      Privacy Policy
+                      Política de Privacidade
                     </a>
                   </li>
                   <li>
                     <a href="#" className="hover:underline">
-                      Terms &amp; Conditions
+                      Termos de Uso
                     </a>
                   </li>
                 </ul>
@@ -86,7 +87,7 @@ export default function Footer() {
           <div className="sm:flex sm:items-center sm:justify-between content">
             <span className="text-sm text-gray-500 sm:text-center ">
               © {new Date().getFullYear()}{" "}
-              <a href="https://Merlin.com/" className="hover:underline">
+              <a href="https://merlin.app.br/" className="hover:underline">
                 Merlin™
               </a>
               . Todos os direitos reservados.

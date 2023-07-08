@@ -3,8 +3,9 @@ import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { TechData as techData } from "./data";
 import SwiperCore, { Autoplay } from "swiper";
+import Image from "next/image";
 
-const BASEPATH = "/Tech/";
+const BASEPATH = "/tech/";
 
 export default function HomeTech() {
   const [titleColor, setTitleColor] = useState("#000");
@@ -36,7 +37,7 @@ export default function HomeTech() {
 
   return (
     <>
-      <div>
+      <div className="screen-p">
         <h2
           className="text-4xl font-semibold transition-all duration-500 ease-in-out whitespace-nowrap"
           style={{ color: titleColor }}
@@ -80,9 +81,12 @@ export default function HomeTech() {
                 handleMouseOver(color)();
               }}
             >
-              <img
+              <Image
                 src={BASEPATH + image}
                 alt={image?.split(".")[0]}
+                title={image?.split(".")[0]}
+                width={100}
+                height={100}
                 className="h-16 w-16 filter grayscale hover:grayscale-0 transition-all duration-500 ease-in-out object-contain"
                 draggable={false}
                 onDragStart={(e) => e.preventDefault()}

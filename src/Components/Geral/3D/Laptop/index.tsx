@@ -25,7 +25,7 @@ function LaptopMesh() {
   });
 
   return (
-    <mesh ref={meshRef} scale={0.8}>
+    <mesh ref={meshRef} scale={1}>
       <primitive object={gltf.scene} />
       <meshStandardMaterial color="hotpink" />
     </mesh>

@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Merlin -Empresa de tecnologia de Jaraguá do Sul</title>
+        <title>Merlin - Empresa de tecnologia de Jaraguá do Sul</title>
         <meta
           name="description"
           content="A Merlin é uma empresa de tecnologia que cria soluções digitais inovadoras para negócios, desde sites e plataformas personalizadas até aplicativos de última geração. Junte-se a nós e transforme suas ideias em realidade."
@@ -156,7 +156,6 @@ export default function Home() {
               <h3 className="text-3xl font-bold">
                 Aumente o retorno dos seus investimentos com tecnologia
               </h3>
-              {/* willy dorow 29, Jaraguá do Sul, SC */}
               <a
                 href={
                   "https://www.google.com/maps/place/" +

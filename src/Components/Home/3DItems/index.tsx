@@ -11,50 +11,50 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export default function ThreeDItems() {
-  const [showItem, setShowItem] = useState(-1);
-  const [width, setWidth] = useState(0);
+  // const [showItem, setShowItem] = useState(-1);
+  // const [width, setWidth] = useState(0);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setWidth(window.innerWidth);
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setWidth(window.innerWidth);
+  //   };
+  //   handleResize();
+  //   window.addEventListener("resize", handleResize);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
 
-  const handleDimiss = () => {
-    setShowItem(-1);
-  };
+  // const handleDimiss = () => {
+  //   setShowItem(-1);
+  // };
 
-  const handleSetItem = (index: number) => {
-    return () => {
-      setShowItem(index);
-    };
-  };
+  // const handleSetItem = (index: number) => {
+  //   return () => {
+  //     setShowItem(index);
+  //   };
+  // };
 
   return (
     <div className="flex justify-between">
       <div className="absolute left-0 w-full">
-        {width > 768 && (
+        {/* {width > 768 && (
           <div className="relative w-full -top-96">
             <Phone show={showItem === 0} />
             <Laptop show={showItem === 1} />
           </div>
-        )}
+        )} */}
       </div>
-      <ThreeItem onMouseEnter={handleSetItem(0)}>
+      <ThreeItem>
         <DevicePhoneMobileIcon className="w-12 h-12" />
       </ThreeItem>
-      <ThreeItem onMouseEnter={handleSetItem(1)}>
+      <ThreeItem>
         <ComputerDesktopIcon className="w-12 h-12" />
       </ThreeItem>
-      <ThreeItem onMouseEnter={handleSetItem(2)}>
+      <ThreeItem>
         <CpuChipIcon className="w-12 h-12" />
       </ThreeItem>
-      <ThreeItem onMouseEnter={handleSetItem(3)}>
+      <ThreeItem>
         <BuildingOfficeIcon className="w-12 h-12" />
       </ThreeItem>
     </div>

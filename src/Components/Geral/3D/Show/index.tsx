@@ -12,18 +12,21 @@ export default function Show3D({
   right,
 }: Show3DProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const containerXSpring = useSpring(-width, { stiffness: 100, damping: 20 });
+  const containerXSpring = useSpring(right ? width : -width, {
+    stiffness: 100,
+    damping: 20,
+  });
 
   useEffect(() => {
     const animatePhone = () => {
       if (show) {
-        containerXSpring.set(-width);
+        containerXSpring.set(right ? width : -width);
       } else {
         containerXSpring.set(0);
       }
     };
     animatePhone();
-  }, [containerXSpring, width, show]);
+  }, [containerXSpring, width, show, right]);
 
   return (
     <div
@@ -31,7 +34,9 @@ export default function Show3D({
       ref={containerRef}
     >
       <motion.div
-        className={"absolute w-full h-full " + (right ? "right-0" : "left-0")}
+        className={
+          "absolute w-full h-full flex " + (right ? "justify-end" : "")
+        }
         animate={{
           x: containerXSpring.get(),
         }}
@@ -48,7 +53,13 @@ export default function Show3D({
             near: 0.1,
           }}
         >
-          <OrbitControls enableZoom={false} rotateSpeed={2} enablePan={false} />
+          <OrbitControls
+            enableZoom={false}
+            maxPolarAngle={Math.PI / 2 + 0.1}
+            minPolarAngle={Math.PI / 2 - 0.1}
+            rotateSpeed={0.5}
+            enablePan={false}
+          />
           {children}
           <ambientLight intensity={2.5} />
           <directionalLight color="white" position={[0, 0, 5]} intensity={1} />

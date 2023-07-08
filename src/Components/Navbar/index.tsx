@@ -1,12 +1,11 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
 import { tabs } from "./tabs";
 import Image from "next/image";
 export default function Navbar() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [windowWidth, setWindowWidth] = useState(0);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setWindowWidth(window.innerWidth);
   }, []);
 
@@ -23,6 +22,8 @@ export default function Navbar() {
             width={130}
             height={130}
             alt="Merlin Logo"
+            title="Merlin Logo"
+            loading="eager"
           />
         </a>
         <ul className="flex gap-x-6 text-xs">
@@ -30,7 +31,7 @@ export default function Navbar() {
             <li key={tab.name}>
               <a
                 href={tab.path}
-                className="py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
+                className="py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-200 md:p-0 "
               >
                 {tab.name}
               </a>

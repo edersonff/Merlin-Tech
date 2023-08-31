@@ -6,7 +6,7 @@ export default function Gallery() {
       <div className="flex">
         <div className="relative lg:w-80 md:w-72 w-0">
           <div className="absolute w-96 p-10 rounded-4xl bg-gradient-to-r from-purple-700 to-purple-500 text-white lg:-top-0 md:-top-0 -top-32">
-            <h3 className="text-3xl font-semibold text-center mb-6">
+            <h3 className="text-4xl font-bold text-center mb-6">
               Nosso espaço
             </h3>
             <p className="text-base font-light">

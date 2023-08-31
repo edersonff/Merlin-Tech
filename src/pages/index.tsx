@@ -110,8 +110,8 @@ export default function Home() {
             id="segmentos"
           >
             <div className="flex flex-col items-start gap-y-4 lg:w-3/4">
-              <h3 className="text-5xl font-semibold">Diversos segmentos</h3>
-              <p>
+              <h3 className="text-5xl font-bold">Diversos segmentos</h3>
+              <p className="text-lg font-light leading-8 mb-4">
                 Oferecemos estratégias sob medida para impulsionar o sucesso do
                 seu negócio, independentemente do setor em que você atua. Conte
                 com nossa experiência e expertise para alcançar resultados
@@ -119,7 +119,7 @@ export default function Home() {
               </p>
               <a
                 href="#contato"
-                className="rounded-full border-2 border-white px-8 py-2 flex items-center gap-x-2"
+                className="rounded-full border-2 border-white px-12 py-2 flex items-center gap-x-2 hover:bg-white hover:text-purple-800 transition-all ease-in-out duration-200"
               >
                 Contato
               </a>
@@ -130,7 +130,7 @@ export default function Home() {
         <div className="rounded-full absolute -left-48 transform -translate-y-2/3 bg-white p-64 flex items-center justify-center -z-20" />
 
         <div className="center mb-32">
-          <div className="content mx-auto flex items-end flex-wrap justify-center">
+          <div className="content  mx-auto flex items-end flex-wrap justify-center">
             <TextCard
               title="Onde estamos?"
               text="Potencialize suas ideias em Jaraguá do Sul com a Merlin. Junte-se a nós e transforme seus projetos em realidade na cidade empreendedora. Entre em contato hoje mesmo e descubra como podemos impulsionar seu negócio digitalmente."
@@ -151,9 +151,9 @@ export default function Home() {
         </div>
 
         <div className="center mb-14">
-          <div className="content flex justify-center flex-wrap px-4 gap-x-8 gap-y-16">
-            <div className="flex-1 flex flex-col gap-y-4">
-              <h3 className="text-3xl font-bold">
+          <div className="content flex justify-center flex-wrap px-4 gap-x-16 gap-y-16">
+            <div className="flex-1 flex flex-col">
+              <h3 className="text-3xl font-bold mb-10">
                 Aumente o retorno dos seus investimentos com tecnologia
               </h3>
               <a
@@ -163,7 +163,7 @@ export default function Home() {
                 }
                 target="_blank"
                 rel="noreferrer"
-                className="w-full h-full relative"
+                className="w-full h-full relative overflow-hidden rounded-l-4xl"
               >
                 <div className="absolute top-0 left-0 w-full h-full hover:opacity-100 ease-in-out opacity-0 transition-all bg-purple-400/30 center">
                   <h3 className="text-3xl font-bold text-white text-center">
@@ -183,7 +183,9 @@ export default function Home() {
             </div>
             <div className="flex-1 flex flex-col gap-y-4 justify-between">
               <div className="flex flex-col gap-y-4">
-                <h2 className="text-4xl font-bold">Resultados excepcionais</h2>
+                <h2 className="text-4xl font-bold mb-10">
+                  Resultados excepcionais
+                </h2>
                 <p className="text-justify text-lg font-light leading-8">
                   A Merlin oferece soluções digitais que geram resultados
                   excepcionais para o seu negócio. Desenvolvemos websites,
@@ -200,7 +202,7 @@ export default function Home() {
 
         <div className="center flex-col text-center mt-44" id="produtos">
           <div className="content mx-auto">
-            <h2 className="text-4xl font-semibold text-purple-900 mb-2">
+            <h2 className="text-6xl font-bold text-purple-900 mb-2">
               Nossos Produtos
             </h2>
           </div>
@@ -220,7 +222,7 @@ export default function Home() {
         <div className="w-full bg-gradient-to-b from-[#885CD0] to-[#7579FF] text-white">
           <div className="center">
             <div className="content flex flex-col items-center justify-center py-14">
-              <h2 className="text-5xl font-semibold text-center">
+              <h2 className="text-6xl font-bold text-center">
                 Vamos trabalhar juntos?
               </h2>
               <p className="text-center text-lg font-light leading-8 mt-4">

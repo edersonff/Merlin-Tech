@@ -15,9 +15,7 @@ export default function TextCard({
     <div
       className={`flex flex-1 flex-col gap-y-4 p-2 ${marginLeft} ${alignText} ${items}`}
     >
-      <h2 className={`text-5xl lg:w-3/4 font-semibold text-purple-900`}>
-        {title}
-      </h2>
+      <h2 className={`text-5xl lg:w-3/4 font-bold text-purple-900`}>{title}</h2>
       <hr
         className="w-16 border-purple-900"
         style={{

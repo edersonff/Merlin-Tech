@@ -34,7 +34,7 @@ export default function HomeContact() {
       </div>
       <div className="flex gap-x-32 my-10 screen-p">
         <div className="flex-1">
-          <h3 className="text-3xl font-medium">Entre em contato</h3>
+          <h3 className="text-3xl font-bold">Entre em contato</h3>
 
           <form
             className="flex flex-col gap-y-4 mt-4 w-full"

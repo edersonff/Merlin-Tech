@@ -21,7 +21,7 @@
 }
 
 .content{
-  @apply max-w-content w-full sm:mx-4 md:mx-8 lg:mx-16;
+  @apply w-full lg:w-3/5 sm:mx-4 md:mx-8 lg:mx-16;
 }
 
 .screen-p{

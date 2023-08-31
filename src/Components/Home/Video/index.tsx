@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { VideoProps } from "./types";
-import {
-  useViewportScroll,
-  motion,
-  useTransform,
-  useMotionValue,
-  useSpring,
-} from "framer-motion";
+import { useViewportScroll, motion, useTransform } from "framer-motion";
+import Image from "next/image";
 
 export default function HomeVideo() {
   const [isLoadingVideo, setIsLoadingVideo] = useState(true);
@@ -30,21 +25,33 @@ export default function HomeVideo() {
       </motion.div>
       <div className="absolute top-0 left-0 h-full w-full center text-white">
         <div className="content">
-          <div className="flex flex-col items-start screen-p">
-            <h1 className="text-4xl font-semibold">
-              Merlin, empresa de tecnologia de Jaraguá do Sul
-            </h1>
-            <p className="mt-4 text-gray-200 leading-7">
-              Empresa de tecnologia de Jaraguá do Sul, que atua no mercado de
-              desenvolvimento de software e consultoria em TI. A empresa foi
-              fundada em 2023.
-            </p>
-            <a
-              className="bg-purple-800 border border-white text-white rounded-2xl py-3 px-8 mt-6 block hover:bg-purple-900 active:bg-purple-700 transition-all ease-in-out duration-200"
-              href="#contato"
-            >
-              Entre em contato
-            </a>
+          <div className="flex">
+            <div className="center flex-col screen-p flex-1">
+              <h1 className="text-4xl font-bold mb-4">
+                Merlin, empresa de tecnologia de Jaraguá do Sul
+              </h1>
+              <p className="mt-4 text-gray-200 leading-7 text-lg">
+                Empresa de tecnologia de Jaraguá do Sul, que atua no mercado de
+                desenvolvimento de software e consultoria em TI. A empresa foi
+                fundada em 2023.
+              </p>
+              <a
+                className="bg-purple-800 border border-white text-white rounded-2xl py-3 px-8 mt-6 block hover:bg-purple-900 active:bg-purple-700 transition-all ease-in-out duration-200"
+                href="#contato"
+              >
+                Entre em contato
+              </a>
+            </div>
+            <div className="flex-1 h-full lg:flex justify-center items-center hidden">
+              <Image
+                src="/merlin/logo.svg"
+                width={300}
+                height={300}
+                alt="Merlin Logo"
+                title="Merlin Logo"
+                loading="eager"
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Pagination, Navigation } from "swiper";
+import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import LogoItem from "./Item";
 import { logos } from "./logos";

@@ -39,7 +39,7 @@ export default function HomeTech() {
     <>
       <div className="screen-p">
         <h2
-          className="text-4xl font-semibold transition-all duration-500 ease-in-out whitespace-nowrap"
+          className="text-4xl font-bold mb-2 transition-all duration-500 ease-in-out whitespace-nowrap"
           style={{ color: titleColor }}
         >
           Tecnologias na manga

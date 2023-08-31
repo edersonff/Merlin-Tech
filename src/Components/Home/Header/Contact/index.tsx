@@ -22,7 +22,7 @@ export default function HeaderContact() {
           className="flex items-center justify-center"
         >
           <ChatBubbleOvalLeftIcon className="h-4 w-4" />
-          <span className="ml-2">+55 47 99655-6538</span>
+          <span className="ml-2">47 99655-6538</span>
         </Link>
         <div className="flex items-center justify-center ml-4">
           <MapPinIcon className="h-4 w-4" />

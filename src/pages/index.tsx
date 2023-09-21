@@ -227,7 +227,7 @@ export default function Home() {
                 Let&apos;s work together?
               </h2>
               <p className="text-center text-lg font-light leading-6 mt-4">
-                Contact us at
+                Contact us at{" "}
                 <a
                   href="mailto:contato@merlin.app.br"
                   className="text-purple-300 hover:text-purple-400"

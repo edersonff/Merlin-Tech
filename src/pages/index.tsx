@@ -47,11 +47,11 @@ export default function Home() {
           <HomeSearch />
         </OnView>
 
-        <div className="center mt-14" id="quem-somos">
+        <div className="center mt-14" id="about-us">
           <div className="content mx-auto">
             <TextCard
-              title="Quem somos?"
-              text="A Merlin é uma empresa de tecnologia que cria soluções digitais inovadoras para negócios, desde sites e plataformas personalizadas até aplicativos de última geração. Junte-se a nós e transforme suas ideias em realidade."
+              title="Who We Are?"
+              text="Merlin is a technology company that creates innovative digital solutions for businesses, from customized websites and platforms to cutting-edge applications. Join us and turn your ideas into reality."
             />
           </div>
           <Image
@@ -59,8 +59,8 @@ export default function Home() {
             width={150}
             height={150}
             onDragStart={(e) => e.preventDefault()}
-            alt="Grid de Quadrados"
-            title="Grid de Quadrados"
+            alt="Grid of Squares"
+            title="Grid of Squares"
             className="absolute -right-1 z-0"
           />
         </div>
@@ -83,13 +83,13 @@ export default function Home() {
                 height={300}
                 onDragStart={(e) => e.preventDefault()}
                 src={"/images/illustrations/idea.svg"}
-                alt="Ilustração de uma ideia"
-                title="Ilustração de uma ideia"
+                alt="Idea Illustration"
+                title="Idea Illustration"
               />
             </OnView>
             <TextCard
-              title="Crie e desenvolva suas ideias"
-              text="A Merlin oferece soluções digitais personalizadas e inovadoras para impulsionar seu negócio. Desenvolvemos websites, plataformas e aplicativos de última geração, garantindo resultados de excelência. Transforme suas ideias em realidade. Entre em contato conosco."
+              title="Create and Develop Your Ideas"
+              text="Merlin provides customized and innovative digital solutions to boost your business. We develop cutting-edge websites, platforms, and apps, ensuring excellent results. Turn your ideas into reality. Get in touch with us."
               pl
             />
           </div>
@@ -99,29 +99,31 @@ export default function Home() {
           <Image
             onDragStart={(e) => e.preventDefault()}
             src="/images/bg/Two-Working.webp"
-            alt="Espaço de trabalho com duas pessoas"
-            title="Espaço de trabalho com duas pessoas"
+            alt="Workspace with Two People"
+            title="Workspace with Two People"
             width={1280}
             height={720}
             className="absolute top-0 left-0 object-cover object-center w-full h-full -z-10"
           />
           <div
             className="content flex flex-col justify-end w-full h-full py-16"
-            id="segmentos"
+            id="services"
           >
-            <div className="flex flex-col items-start gap-y-4 lg:w-3/4">
-              <h3 className="text-5xl font-bold">Diversos segmentos</h3>
-              <p className="text-lg font-light leading-8 mb-4">
-                Oferecemos estratégias sob medida para impulsionar o sucesso do
-                seu negócio, independentemente do setor em que você atua. Conte
-                com nossa experiência e expertise para alcançar resultados
-                excepcionais em sua área de atuação.
+            <div className="flex flex-col items-start gap-y-4 lg:w-3/4 lg:px-0 px-4">
+              <h3 className="lg:text-5xl text-4xl font-bold">
+                Diverse Industries
+              </h3>
+              <p className="lg:text-lg font-light leading-6 mb-4">
+                We offer tailor-made strategies to drive your business's
+                success, regardless of the industry you operate in. Rely on our
+                experience and expertise to achieve exceptional results in your
+                field.
               </p>
               <a
                 href="#contato"
                 className="rounded-full border-2 border-white px-12 py-2 flex items-center gap-x-2 hover:bg-white hover:text-purple-800 transition-all ease-in-out duration-200"
               >
-                Contato
+                Contact
               </a>
             </div>
           </div>
@@ -132,8 +134,8 @@ export default function Home() {
         <div className="center mb-32">
           <div className="content  mx-auto flex items-end flex-wrap justify-center">
             <TextCard
-              title="Onde estamos?"
-              text="Potencialize suas ideias em Jaraguá do Sul com a Merlin. Junte-se a nós e transforme seus projetos em realidade na cidade empreendedora. Entre em contato hoje mesmo e descubra como podemos impulsionar seu negócio digitalmente."
+              title="Where We Are?"
+              text="Unlock your ideas in Jaraguá do Sul with Merlin. Join us and bring your projects to life in the entrepreneurial city. Get in touch today and discover how we can digitally empower your business."
               pl
               align="right"
             />
@@ -143,8 +145,8 @@ export default function Home() {
                 height={300}
                 onDragStart={(e) => e.preventDefault()}
                 src={"/images/illustrations/office.svg"}
-                alt="Illustração de um escritório"
-                title="Illustração de um escritório"
+                alt="Office Illustration"
+                title="Office Illustration"
               />
             </OnView>
           </div>
@@ -154,7 +156,7 @@ export default function Home() {
           <div className="content flex justify-center flex-wrap px-4 gap-x-16 gap-y-16">
             <div className="flex-1 flex flex-col">
               <h3 className="text-3xl font-bold mb-10">
-                Aumente o retorno dos seus investimentos com tecnologia
+                Increase ROI with Technology
               </h3>
               <a
                 href={
@@ -167,7 +169,7 @@ export default function Home() {
               >
                 <div className="absolute top-0 left-0 w-full h-full hover:opacity-100 ease-in-out opacity-0 transition-all bg-purple-400/30 center">
                   <h3 className="text-3xl font-bold text-white text-center">
-                    Nosso escritório
+                    Our office
                   </h3>
                 </div>
                 <Image
@@ -176,23 +178,22 @@ export default function Home() {
                   className="w-full h-full object-cover object-center"
                   onDragStart={(e) => e.preventDefault()}
                   src="/images/banner/02.webp"
-                  alt="Nosso escritório Jaraguá do Sul"
-                  title="Nosso escritório Jaraguá do Sul"
+                  alt="Our Jaraguá do Sul Office"
+                  title="Our Jaraguá do Sul Office"
                 />
               </a>
             </div>
             <div className="flex-1 flex flex-col gap-y-4 justify-between">
               <div className="flex flex-col gap-y-4">
                 <h2 className="text-4xl font-bold mb-10">
-                  Resultados excepcionais
+                  Exceptional Results
                 </h2>
-                <p className="text-justify text-lg font-light leading-8">
-                  A Merlin oferece soluções digitais que geram resultados
-                  excepcionais para o seu negócio. Desenvolvemos websites,
-                  plataformas personalizadas e aplicativos de última geração,
-                  impulsionando o crescimento e ampliando o alcance da sua
-                  empresa. Entre em contato e descubra como podemos gerar
-                  resultados extraordinários para o seu negócio.
+                <p className="text-justify text-lg font-light leading-7">
+                  Merlin provides digital solutions that deliver exceptional
+                  results for your business. We develop customized websites,
+                  platforms, and cutting-edge applications, driving growth and
+                  expanding your company's reach. Get in touch and discover how
+                  we can generate extraordinary results for your business.
                 </p>
               </div>
               <ThreeDItems />
@@ -200,18 +201,18 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="center flex-col text-center mt-44" id="produtos">
+        <div className="center flex-col text-center mt-44" id="projects">
           <div className="content mx-auto">
-            <h2 className="text-6xl font-bold text-purple-900 mb-2">
-              Nossos Produtos
+            <h2 className="lg:text-6xl text-4xl font-bold text-purple-900 mb-2">
+              Our Products
             </h2>
           </div>
           <div className="border-t-2 border-b-2 border-purple-300 mb-8 pt-1 pb-32 bg-purple-50 w-full">
             <div className="mb-10 pt-2">
-              <p className="text-2xl leading-8">
-                Veja alguns de nossos últimos trabalhos, todos desenvolvidos
+              <p className="lg:text-2xl text-lg leading-6">
+                Check out some of our recent work, all tailored
                 <br />
-                sob-medida para cada empresa.
+                to each company.
               </p>
             </div>
             <HomeProjects invert />
@@ -222,11 +223,11 @@ export default function Home() {
         <div className="w-full bg-gradient-to-b from-[#885CD0] to-[#7579FF] text-white">
           <div className="center">
             <div className="content flex flex-col items-center justify-center py-14">
-              <h2 className="text-6xl font-bold text-center">
-                Vamos trabalhar juntos?
+              <h2 className="lg:text-6xl text-4xl font-bold text-center">
+                Let's work together?
               </h2>
-              <p className="text-center text-lg font-light leading-8 mt-4">
-                Entre em contato com a gente pelo email{" "}
+              <p className="text-center text-lg font-light leading-6 mt-4">
+                Contact us at
                 <a
                   href="mailto:contato@merlin.app.br"
                   className="text-purple-300 hover:text-purple-400"
@@ -243,8 +244,8 @@ export default function Home() {
           width={200}
           height={200}
           onDragStart={(e) => e.preventDefault()}
-          alt="Borda de circulo"
-          title="Borda de circulo"
+          alt="Circle Border"
+          title="Circle Border"
           className="absolute -right-1 z-0 transform translate-y-[150px]"
         />
 
@@ -259,8 +260,8 @@ export default function Home() {
           width={150}
           height={150}
           onDragStart={(e) => e.preventDefault()}
-          alt="Grid de circulos"
-          title="Grid de circulos"
+          alt="Circle Grid"
+          title="Circle Grid"
           className="absolute left-2 transofrm -translate-y-[250px] -z-10"
         />
 
@@ -281,8 +282,8 @@ export default function Home() {
       </div>
       <WhatsappBtn>
         <p className="text-sm text-black">
-          Quer tirar suas ideias do papel?{" "}
-          <span className="text-primary-500">Fale com a gente!</span>{" "}
+          Want to bring your ideas to life?{" "}
+          <span className="text-primary-500">Talk to us!</span>{" "}
           <span className="text-primary-500">😊</span>
         </p>
       </WhatsappBtn>

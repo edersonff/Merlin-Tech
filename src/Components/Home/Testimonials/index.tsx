@@ -13,7 +13,7 @@ export default function HomeTestimonials() {
         />
         <figure className="mt-10">
           <OnView>
-            <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+            <blockquote className="text-center text-xl font-semibold leading-6 text-gray-900 sm:text-2xl sm:leading-7">
               <p>
                 “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
                 expedita voluptas culpa sapiente alias molestiae. Numquam

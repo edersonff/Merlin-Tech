@@ -32,7 +32,7 @@ export default function HomeHero() {
             <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Conectando você ao futuro com a tecnologia Merlin
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-6 text-gray-600">
               Junte-se a nós na jornada rumo ao sucesso tecnológico. Na Merlin,
               estamos prontos para transformar sua visão em realidade com
               soluções inovadoras que conectam pessoas e empresas ao redor do

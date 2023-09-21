@@ -29,7 +29,7 @@ export default function HomeTeam() {
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Conheça nosso time
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-6 text-gray-600">
             Conheça alguns dos membros do nosso time Merlin - Sistemas e seus
             respectivos cargos:
           </p>

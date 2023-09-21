@@ -12,7 +12,7 @@ export default function HomeFeature() {
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Tudo o que você precisa para implantar seu aplicativo
           </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-6 text-gray-600">
             Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
             Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
             In mi viverra elit nunc.

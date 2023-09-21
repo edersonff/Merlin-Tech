@@ -47,8 +47,8 @@ export default function WhatsappChatBubble({
       </div>
       <Image
         src="/images/illustrations/speech.svg"
-        alt="Balão de fala - Whatsapp"
-        title="Balão de fala - Whatsapp"
+        alt="WhatsApp Speech Bubble"
+        title="WhatsApp Speech Bubble"
         width={260}
         height={64}
         loading="eager"

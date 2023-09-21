@@ -6,14 +6,12 @@ export default function Gallery() {
       <div className="flex">
         <div className="relative lg:w-80 md:w-72 w-0">
           <div className="absolute w-96 p-10 rounded-4xl bg-gradient-to-r from-purple-700 to-purple-500 text-white lg:-top-0 md:-top-0 -top-32">
-            <h3 className="text-4xl font-bold text-center mb-6">
-              Nosso espaço
-            </h3>
+            <h3 className="text-4xl font-bold text-center mb-6">Our Space</h3>
             <p className="text-base font-light">
-              A Merlin conecta você ao ambiente digital, independentemente da
-              sua localização física. Transforme o seu espaço em um ambiente
-              digital com as nossas soluções inovadoras. Conte com a nossa
-              expertise para alcançar o sucesso, onde quer que você esteja.
+              Merlin connects you to the digital environment, regardless of your
+              physical location. Transform your space into a digital environment
+              with our innovative solutions. Count on our expertise to achieve
+              success, wherever you are.
             </p>
           </div>
         </div>

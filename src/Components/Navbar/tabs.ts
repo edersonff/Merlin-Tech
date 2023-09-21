@@ -1,22 +1,22 @@
 export const tabs = [
   {
-    name: "Quem somos",
-    path: "/#quem-somos",
+    name: "Home",
+    path: "/",
   },
   {
-    name: "Desenvolva",
-    path: "/#desenvolva",
+    name: "About us",
+    path: "/#about-us",
   },
   {
-    name: "Diversos segmentos",
-    path: "/#segmentos",
+    name: "Services",
+    path: "/#services",
   },
+  // {
+  //   name: "Blog",
+  //   path: "/#blog",
+  // },
   {
-    name: "Nossos Produtos",
-    path: "/#produtos",
-  },
-  {
-    name: "Contato",
-    path: "/#contato",
+    name: "Projects",
+    path: "/#projects",
   },
 ];

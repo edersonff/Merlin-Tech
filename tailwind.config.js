@@ -3,6 +3,14 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx,vue}"],
   theme: {
     extend: {
+      colors: {
+        primary: {
+          DEFAULT: "#412b6d",
+        },
+      },
+      boxShadow: {
+        hard: "5px 5px 0 rgba(0, 0, 0, 0.25)",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -20,7 +28,7 @@ module.exports = {
     },
     maxWidth: {
       content: "900px",
-    }
+    },
   },
   plugins: [
     require("daisyui"),

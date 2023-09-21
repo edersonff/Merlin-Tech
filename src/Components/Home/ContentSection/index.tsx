@@ -49,7 +49,7 @@ export default function HomeContentSection() {
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 A better workflow
               </h1>
-              <p className="mt-6 text-xl leading-8 text-gray-700">
+              <p className="mt-6 text-xl leading-6 text-gray-700">
                 Aliquet nec orci mattis amet quisque ullamcorper neque, nibh
                 sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque
                 id at vitae feugiat egestas.

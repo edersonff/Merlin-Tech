@@ -21,7 +21,7 @@ export default function Footer() {
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
-                  Produtos
+                  PRODUCTS
                 </h2>
                 <ul className="text-gray-600  font-medium">
                   <li className="mb-4">
@@ -44,7 +44,7 @@ export default function Footer() {
               </div>
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
-                  Nós siga
+                  FOLLOW US
                 </h2>
                 <ul className="text-gray-600  font-medium">
                   <li className="mb-4">
@@ -69,12 +69,12 @@ export default function Footer() {
                 <ul className="text-gray-600  font-medium">
                   <li className="mb-4">
                     <a href="#" className="hover:underline">
-                      Política de Privacidade
+                      Privacy Policy
                     </a>
                   </li>
                   <li>
                     <a href="#" className="hover:underline">
-                      Termos de Uso
+                      Terms of Use
                     </a>
                   </li>
                 </ul>
@@ -82,7 +82,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <hr className="my-6 border-gray-300 sm:mx-auto lg:my-8" />
         <div className="center">
           <div className="sm:flex sm:items-center sm:justify-between content">
             <span className="text-sm text-gray-500 sm:text-center ">
@@ -90,7 +90,7 @@ export default function Footer() {
               <a href="https://merlin.app.br/" className="hover:underline">
                 Merlin™
               </a>
-              . Todos os direitos reservados.
+              . All rights reserved.
             </span>
             <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
               <a href="#" className="text-gray-500 hover:text-gray-900 ">

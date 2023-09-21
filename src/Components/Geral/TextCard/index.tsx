@@ -7,7 +7,7 @@ export default function TextCard({
   pl = false,
   align = "left",
 }: TextCardProps) {
-  const marginLeft = pl ? "lg:pl-6" : "";
+  const marginLeft = pl ? "lg:pl-8" : "";
   const items = align === "left" ? "items-start" : "items-end";
   const alignText = align === "left" ? "text-left" : "text-right";
 
@@ -15,14 +15,16 @@ export default function TextCard({
     <div
       className={`flex flex-1 flex-col gap-y-4 p-2 ${marginLeft} ${alignText} ${items}`}
     >
-      <h2 className={`text-5xl lg:w-3/4 font-bold text-purple-900`}>{title}</h2>
+      <h2 className={`lg:text-5xl text-4xl lg:w-3/4 font-bold text-purple-900`}>
+        {title}
+      </h2>
       <hr
         className="w-16 border-purple-900"
         style={{
           borderWidth: 3,
         }}
       />
-      <p className="text-lg font-light leading-9">{text}</p>
+      <p className="md:text-lg lg:text-lg font-light leading-8">{text}</p>
     </div>
   );
 }

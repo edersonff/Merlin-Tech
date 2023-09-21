@@ -11,7 +11,7 @@ export default function HomeVideo() {
   const topTransform = useTransform(scrollY, [0, 1000], [-20, 500]);
 
   return (
-    <div className="h-[90vh] w-full flex justify-center items-end relative overflow-hidden bg-gray-700">
+    <div className="h-[70vh] w-full flex justify-center items-end relative overflow-hidden bg-gray-700">
       <motion.div
         className="absolute top-0 left-0 h-full w-full"
         style={{
@@ -26,20 +26,20 @@ export default function HomeVideo() {
       <div className="absolute top-0 left-0 h-full w-full center text-white">
         <div className="content">
           <div className="flex">
-            <div className="center flex-col screen-p flex-1">
-              <h1 className="text-4xl font-bold mb-4">
-                Merlin, empresa de tecnologia de Jaraguá do Sul
+            <div className="flex items-start flex-col screen-p flex-1">
+              <h1 className="lg:text-4xl text-3xl font-bold lg:mb-4 mb-2">
+                Merlin, a technology company based in Jaraguá do Sul
               </h1>
-              <p className="mt-4 text-gray-200 leading-7 text-lg">
-                Empresa de tecnologia de Jaraguá do Sul, que atua no mercado de
-                desenvolvimento de software e consultoria em TI. A empresa foi
-                fundada em 2023.
+              <p className="mt-4 text-gray-200 lg:leading-7 lg:text-lg">
+                A technology company from Jaraguá do Sul, operating in the
+                software development and IT consulting market. The company was
+                founded in 2023.
               </p>
               <a
-                className="bg-purple-800 border border-white text-white rounded-2xl py-3 px-8 mt-6 block hover:bg-purple-900 active:bg-purple-700 transition-all ease-in-out duration-200"
-                href="#contato"
+                className="relative bg-purple-800 text-white rounded-xl py-3 px-10 mt-6 block hover:bg-purple-900 active:bg-purple-700 transition-all ease-in-out duration-200 shadow-hard shadow-black active:shadow-none top-0 left-0 active:left-[5px] active:top-[5px] "
+                href="#contact-us"
               >
-                Entre em contato
+                Contact Us
               </a>
             </div>
             <div className="flex-1 h-full lg:flex justify-center items-center hidden">

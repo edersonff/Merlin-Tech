@@ -42,10 +42,10 @@ export default function HomeTech() {
           className="text-4xl font-bold mb-2 transition-all duration-500 ease-in-out whitespace-nowrap"
           style={{ color: titleColor }}
         >
-          Tecnologias na manga
+          Technologies in Our Toolbox
         </h2>
-        <p className="text-2xl font-light leading-8 4">
-          Conheça algumas tecnologias que utilizamos
+        <p className="text-2xl font-light leading-6 4">
+          Explore some of the technologies we use
         </p>
       </div>
       <Swiper

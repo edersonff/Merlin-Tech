@@ -50,7 +50,7 @@ export default function HomeHeader() {
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Trabalhe com a gente
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-300">
+          <p className="mt-6 text-lg leading-6 text-gray-300">
             Venha fazer parte da equipe Merlin - Sistemas. Juntos, podemos
             construir soluções inovadoras e transformar o futuro da tecnologia.
           </p>
@@ -69,7 +69,7 @@ export default function HomeHeader() {
                 <dt className="text-base leading-7 text-gray-300">
                   {stat.name}
                 </dt>
-                <dd className="text-2xl font-bold leading-9 tracking-tight text-white">
+                <dd className="text-2xl font-bold leading-7 tracking-tight text-white">
                   {stat.value}
                 </dd>
               </OnView>

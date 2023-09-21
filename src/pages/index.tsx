@@ -114,7 +114,7 @@ export default function Home() {
                 Diverse Industries
               </h3>
               <p className="lg:text-lg font-light leading-6 mb-4">
-                We offer tailor-made strategies to drive your business's
+                We offer tailor-made strategies to drive your business&apos;s
                 success, regardless of the industry you operate in. Rely on our
                 experience and expertise to achieve exceptional results in your
                 field.
@@ -192,8 +192,8 @@ export default function Home() {
                   Merlin provides digital solutions that deliver exceptional
                   results for your business. We develop customized websites,
                   platforms, and cutting-edge applications, driving growth and
-                  expanding your company's reach. Get in touch and discover how
-                  we can generate extraordinary results for your business.
+                  expanding your company&apos;s reach. Get in touch and discover
+                  how we can generate extraordinary results for your business.
                 </p>
               </div>
               <ThreeDItems />
@@ -224,7 +224,7 @@ export default function Home() {
           <div className="center">
             <div className="content flex flex-col items-center justify-center py-14">
               <h2 className="lg:text-6xl text-4xl font-bold text-center">
-                Let's work together?
+                Let&apos;s work together?
               </h2>
               <p className="text-center text-lg font-light leading-6 mt-4">
                 Contact us at

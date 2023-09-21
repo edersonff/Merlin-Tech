@@ -28,7 +28,7 @@ export default function HomeContact() {
       <div className="flex flex-col items-center justify-center">
         <h3 className="text-2xl font-light text-center lg:w-3/4 mb-10 screen-p">
           We help optimize business and project management so you can have the
-          freedom to dream, venture, and live! Let's chat
+          freedom to dream, venture, and live! Let&apos;s chat
         </h3>
       </div>
       <div className="flex gap-x-32 my-10 screen-p" id="contact-us">

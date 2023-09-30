@@ -8,7 +8,7 @@ import WhatsappChatBubble from "./ChatBubble";
 export default function WhatsappBtn({
   href = "https://wa.me/5547996556538",
   onClick,
-  src = "/images/others/patricia.webp",
+  src = "/images/people/patricia.webp",
   alt = "Atendente Whatsapp",
   children,
 }: {

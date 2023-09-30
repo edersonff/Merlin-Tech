@@ -1,11 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: ["./src/**/*.{html,js,jsx,ts,tsx,vue}"],
   theme: {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#412b6d",
+          DEFAULT: "#412B6D",
         },
       },
       boxShadow: {

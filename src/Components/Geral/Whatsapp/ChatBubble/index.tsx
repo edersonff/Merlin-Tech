@@ -49,7 +49,7 @@ export default function WhatsappChatBubble({
         src="/images/illustrations/speech.svg"
         alt="WhatsApp Speech Bubble"
         title="WhatsApp Speech Bubble"
-        width={260}
+        width={280}
         height={64}
         loading="eager"
         className="object-scale-down object-center"

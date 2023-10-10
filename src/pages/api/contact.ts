@@ -16,19 +16,23 @@ export default async function contact(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const { name, email, message } = JSON.parse(req.body);
+  const { name, phone, email, message } = req.body;
 
   const mailData = {
     from: "noreply@merlin.app.br",
     to: "merlin@merlin.app.br",
-    subject: `Mensagem de ${name} - ${email}`,
-    text: message,
+    subject: `Contato de ${name} - Merlin Tech`,
+    text: `
+      Nome: ${name}
+      Telefone: ${phone}
+      Email: ${email}
+      Mensagem: ${message}
+    `,
     html: `
-      <div>
-        <h2>Nome: ${name}</h2>
-        <h2>Email: ${email}</h2>
-        <p>Mensagem: ${message}</p>
-      </div>
+      <p>Nome: ${name}</p>
+      <p>Telefone: ${phone}</p>
+      <p>Email: ${email}</p>
+      <p>Mensagem: ${message}</p>
     `,
   };
 

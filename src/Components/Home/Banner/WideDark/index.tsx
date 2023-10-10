@@ -4,37 +4,36 @@ import {
   MdWebAsset,
   MdOutlineAttachMoney,
 } from "react-icons/md";
-import { HiOutlineShare } from "react-icons/hi";
-import { CgPerformance } from "react-icons/cg";
-import { BiSupport } from "react-icons/bi";
+import { TbEdit } from "react-icons/tb";
+import { BsFillGearFill, BsFillRocketFill } from "react-icons/bs";
 
 export default function WideDarkBanner() {
   return (
     <div className="w-full py-12 bg-[#262626] center">
-      <div className="content flex justify-between lg:flex-row md:flex-row flex-col gap-y-7">
+      <div className="content flex justify-between items-center lg:flex-row md:flex-row flex-col gap-y-7">
         <WideDarkBannerItem
           text={
             <>
-              Clinically <br /> Proven Ingredients
+              Custom <br /> Development
             </>
           }
-          icon={<CgPerformance className="text-4xl text-[#FAFAFA]" />}
+          icon={<BsFillGearFill className="text-4xl text-[#FAFAFA]" />}
         />
         <WideDarkBannerItem
           text={
             <>
-              Clinically <br /> Proven Ingredients
+              Software <br /> Design
             </>
           }
-          icon={<CgPerformance className="text-4xl text-[#FAFAFA]" />}
+          icon={<TbEdit className="text-4xl text-[#FAFAFA]" />}
         />
         <WideDarkBannerItem
           text={
             <>
-              Clinically <br /> Proven Ingredients
+              Software <br /> Innovation
             </>
           }
-          icon={<CgPerformance className="text-4xl text-[#FAFAFA]" />}
+          icon={<BsFillRocketFill className="text-4xl text-[#FAFAFA]" />}
         />
       </div>
     </div>
@@ -49,9 +48,9 @@ function WideDarkBannerItem({
   text: React.ReactNode;
 }) {
   return (
-    <div className="flex gap-5 text-[#FAFAFA] items-center justify-center gap-x-10">
+    <div className="flex gap-5 text-[#FAFAFA] items-center gap-x-10 lg:w-auto md:w-auto sm:w-auto w-[50%]">
       {icon}
-      <div className="text-justify text-lg font-normal uppercase">{text}</div>
+      <div className="text-justify font-normal uppercase">{text}</div>
     </div>
   );
 }

@@ -40,7 +40,7 @@ export default function WhatsappChatBubble({
     >
       <div className="absolute w-full h-full pl-6 pr-3 center">
         {loaded ? (
-          <span className="text-sm text-black-800">{children}</span>
+          <p className="text-sm text-black-800">{children}</p>
         ) : (
           <Lottie animationData="loading" />
         )}
@@ -52,7 +52,8 @@ export default function WhatsappChatBubble({
         width={280}
         height={64}
         loading="eager"
-        className="object-scale-down object-center"
+        className="object-scale-down object-center selectDisable"
+        draggable={false}
       />
     </div>
   );

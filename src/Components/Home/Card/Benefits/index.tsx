@@ -7,18 +7,20 @@ import {
 import { HiOutlineShare } from "react-icons/hi";
 import { CgPerformance } from "react-icons/cg";
 import { BiSupport } from "react-icons/bi";
+import Image from "next/image";
 
 export default function BannerBenefits() {
   return (
-    <div className="center w-full">
+    <div className="center w-full py-14 relative">
       <div className="text-center capitalize text-black content content-px">
-        <h2 className="lg:text-[40px] text-3xl font-extrabold lg:mb-5 mb-3">
-          Benefits of choosing Merlin
+        <h2 className="lg:text-3xl text-2xl font-extrabold lg:mb-3 mb-5">
+          Discover the Advantages of Partnering with Us
         </h2>
-        <p className="lg:text-2xl text-xl font-medium capitalize">
-          Benefits of choosing Merlin
+        <p className="text-lg font-medium capitalize">
+          Unleash the Full Potential of Merlin&apos;s Expertise
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[65px] gap-y-[45px] mt-11">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[65px] gap-y-[45px] mt-16">
           <BannerBenefitsItem
             Icon={
               <MdDashboardCustomize className="text-4xl text-primary-500" />
@@ -57,6 +59,22 @@ export default function BannerBenefits() {
           />
         </div>
       </div>
+      <Image
+        src="/images/illustrations/circles.svg"
+        alt="Circles Illustration"
+        className="absolute bottom-0 left-[3%] -z-10 selectDisable"
+        width={120}
+        height={120}
+        draggable={false}
+      />
+      <Image
+        src="/images/illustrations/squares.svg"
+        alt="Squares Illustration"
+        className="absolute top-0 right-[3%] -z-10 lg:block hidden selectDisable"
+        width={140}
+        height={140}
+        draggable={false}
+      />
     </div>
   );
 }
@@ -71,12 +89,12 @@ export function BannerBenefitsItem({
   text: string;
 }) {
   return (
-    <div className="bg-white soft-shadow py-4 px-6 flex flex-col gap-y-[14px] capitalize">
+    <div className="bg-white soft-shadow py-8 px-6 flex flex-col gap-y-[16px] capitalize">
       <div className="mx-auto w-16 h-16 rounded-full border-2 border-black center">
         {Icon}
       </div>
       <h3 className="text-center text-black font-bold capitalize">{title}</h3>
-      <p className="text-justify text-neutral-600 text-[10px] font-medium leading-[14px]">
+      <p className="text-justify text-neutral-600 text-sm normal-case	font-medium  leading-[18px]">
         {text}
       </p>
     </div>

@@ -82,6 +82,8 @@ export default function FooterHome() {
           height={86}
           alt="Merlin Logo"
           src="/merlin/logo.svg"
+          className="selectDisable"
+          draggable={false}
         />
       </div>
     </div>

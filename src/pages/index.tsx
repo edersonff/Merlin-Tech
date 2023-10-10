@@ -11,6 +11,8 @@ import WideDarkBanner from "@/Components/Home/Banner/WideDark";
 import BottomBanner from "@/Components/Home/Banner/Bottom";
 import BannerClaim from "@/Components/Home/Banner/Claim";
 import FooterHome from "@/Components/Home/Footer";
+import ContactModalHome from "@/Components/Home/Modal/Contact";
+import FrequentlyAskedQuestionHome from "@/Components/Home/FrequentlyQuestions";
 
 export default function Home() {
   return (
@@ -53,17 +55,21 @@ export default function Home() {
 
       <BottomBanner />
 
+      <FrequentlyAskedQuestionHome />
+
       <BannerClaim />
 
       <FooterHome />
 
-      <WhatsappBtn>
+      <ContactModalHome />
+
+      {/* <WhatsappBtn>
         <p className="text-sm text-black">
           Want to bring your ideas to life?{" "}
           <span className="text-primary-500">Talk to us!</span>{" "}
           <span className="text-primary-500">😊</span>
         </p>
-      </WhatsappBtn>
+      </WhatsappBtn> */}
     </>
   );
 }

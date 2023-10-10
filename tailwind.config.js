@@ -31,9 +31,5 @@ module.exports = {
       content: "900px",
     },
   },
-  plugins: [
-    require("daisyui"),
-    require("@tailwindcss/forms"),
-    require("tailwindcss-3d"),
-  ],
+  plugins: [require("@tailwindcss/forms"), require("tailwindcss-3d")],
 };

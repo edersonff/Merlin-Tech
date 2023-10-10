@@ -59,7 +59,8 @@ export default function WhatsappBtn({
           width={64}
           height={64}
           loading="eager"
-          className="rounded-full"
+          className="rounded-full selectDisable"
+          draggable={false}
         />
 
         <div className="absolute right-0 bottom-0 text-sm rounded-full p-1 bg-[#25d366] ">

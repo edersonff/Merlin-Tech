@@ -130,6 +130,7 @@ export default function ContactModalHome() {
                     placeholder="Enter your message"
                     focusBorderColor="primary"
                     size="sm"
+                    ref={messageRef}
                   />
                 </FormControl>
               </ModalBody>

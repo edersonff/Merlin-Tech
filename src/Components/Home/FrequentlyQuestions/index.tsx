@@ -64,7 +64,7 @@ export default function FrequentlyAskedQuestionHome() {
             />
             <AccordionItemHome
               title="How can I get in touch with your team?"
-              content={`You can reach our team by calling us at 1-888-316-2612 or sending an email to support@merlin.app.br. We're also active on social media for your convenience.`}
+              content={`You can reach our team by sending an email to support@merlin.app.br. We're also active on social media for your convenience.`}
             />
             <AccordionItemHome
               title="What industries do you serve?"

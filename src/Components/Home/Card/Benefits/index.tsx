@@ -12,9 +12,10 @@ import Image from "next/image";
 export default function BannerBenefits() {
   return (
     <div className="center w-full py-14 relative">
-      <div className="text-center capitalize text-black content content-px">
-        <h2 className="lg:text-3xl text-2xl font-extrabold lg:mb-3 mb-5">
-          Discover the Advantages of Partnering with Us
+      <div className="text-center capitalize content content-px">
+        <h2 className="lg:text-3xl text-2xl text-black font-extrabold lg:mb-3 mb-5">
+          Discover the <span className="text-primary">Advantages</span> of
+          Partnering with Us
         </h2>
         <p className="text-lg font-medium capitalize">
           Unleash the Full Potential of Merlin&apos;s Expertise

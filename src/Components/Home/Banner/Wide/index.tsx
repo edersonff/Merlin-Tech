@@ -10,11 +10,12 @@ export default function WideBanner() {
       style={{
         backgroundImage: "url('/images/banner/grid-bg.png')",
       }}
-      className="w-full pb-5 pt-10 center content-px"
+      className="w-full pb-14 pt-14 center content-px"
     >
       <div className="content text-center font-semibold capitalize">
-        <h2 className="text-neutral-600 lg:text-xl text-lg leading-7 mb-7">
-          Click Here to Easily Claim Your Free Software <br />
+        <h2 className="lg:text-xl text-lg leading-7 mb-7 text-black">
+          Click Here to Easily Claim Your{" "}
+          <span className="text-primary font-bold">Free</span> Software <br />
           Development Quote with Just One Click of the Button
         </h2>
         <div className="flex flex-col gap-[10px]">

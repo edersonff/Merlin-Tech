@@ -6,7 +6,7 @@ import React from "react";
 export default function OurCompany() {
   return (
     <div className="center content-px relative pb-16 py-5">
-      <div className="content relative z-10 flex flex-col gap-y-24">
+      <div className="content relative z-10 flex flex-col gap-y-28">
         <SectionSparkle title="Who we are?">
           Merlin was founded by a tech enthusiast who noticed the growing
           complexity of technology, leaving many struggling to keep up. Our

@@ -12,7 +12,7 @@ export default function SectionSparkle({
   return (
     <div className="w-full gap-4">
       <div className="flex justify-between">
-        <h2 className="text-center text-indigo-900 text-[40px] font-bold capitalize truncate mb-2">
+        <h2 className="text-center text-indigo-900 lg:text-[36px] md:text-[36px] text-[24px] font-bold capitalize truncate mb-2">
           {title}
         </h2>
 
@@ -25,7 +25,9 @@ export default function SectionSparkle({
           draggable={false}
         />
       </div>
-      <p className="text-justify text-black text-lg">{children}</p>
+      <p className="text-justify text-black lg:text-lg md:text-lg">
+        {children}
+      </p>
     </div>
   );
 }

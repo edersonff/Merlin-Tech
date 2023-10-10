@@ -15,10 +15,10 @@ import { useContact } from "@/store/contact";
 export default function FrequentlyAskedQuestionHome() {
   const { open } = useContact();
   return (
-    <div className="center py-20 content-px">
+    <div className="center py-24 content-px">
       <div className="content">
         <div className="pb-10 text-center">
-          <h2 className="mb-5 text-4xl font-semibold">
+          <h2 className="mb-5 text-[34px] font-semibold">
             Frequently Asked Questions (FAQ)
           </h2>
           <p className="text-lg">

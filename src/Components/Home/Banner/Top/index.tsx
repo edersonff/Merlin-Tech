@@ -101,7 +101,9 @@ function CheckItemConfirm({ text }: { text: string }) {
   return (
     <div className="flex items-center gap-3">
       <BsFillCheckCircleFill className="text-[#9d6cff] text-xl" />
-      <p className="text-white font-semibold leading-6">{text}</p>
+      <p className="text-white font-semibold leading-6 lg:text-base md:text-base text-sm text-left">
+        {text}
+      </p>
     </div>
   );
 }

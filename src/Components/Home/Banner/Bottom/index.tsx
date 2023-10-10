@@ -36,7 +36,7 @@ export default function BottomBanner() {
             <div className="gap-5 flex flex-col lg:w-[50%] lg:min-w-[550px] md:min-w-[550px] w-full text-black">
               <h2
                 className={
-                  "text-[40px] font-semibold capitalize leading-10 " +
+                  "lg:text-[38px] md:text-[38px] text-[24px] font-semibold capitalize leading-10 " +
                   montaguSlab.className
                 }
               >

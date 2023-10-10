@@ -94,7 +94,7 @@ function FooterHomeSection({
   items: FooterHomeSectionLink[];
 }) {
   return (
-    <div className="flex flex-col justify-between gap-y-2.5">
+    <div className="flex flex-col  gap-y-2.5">
       <h2 className="text-neutral-50 text-lg font-bold uppercase">{name}</h2>
       <ul className="flex flex-col gap-2">
         {items.map((item, index) => (

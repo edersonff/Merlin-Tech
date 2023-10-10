@@ -43,10 +43,6 @@ export default function FooterHome() {
           name="Contact us"
           items={[
             {
-              name: "📞 1-888-316-2612",
-              href: "tel:1-888-316-2612",
-            },
-            {
               name: "✉ support@merlin.app.br",
               href: "mailto:support@merlin.app.br",
             },

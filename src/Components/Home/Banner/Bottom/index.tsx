@@ -43,7 +43,7 @@ export default function BottomBanner() {
                 <p className="text-indigo-900">Empowering Innovation &</p>
                 Your Path to Simplicity
               </h2>
-              <p className="text-justify text-lg leading-7">
+              <p className="text-justify lg:text-lg md:text-lg leading-7">
                 At Merlin, we&apos;re dedicated to empowering innovation through
                 our software solutions. We believe in a world where technology
                 enhances the capabilities of individuals and businesses,
@@ -51,7 +51,7 @@ export default function BottomBanner() {
                 technology accessible and user-friendly, ensuring it serves as a
                 bridge to endless possibilities.
               </p>
-              <p className="text-justify text-lg leading-7 pb-4">
+              <p className="text-justify lg:text-lg md:text-lg leading-7 pb-4">
                 Explore Merlin&apos;s software solutions to experience
                 streamlined workflows, enhanced productivity, and the unlocking
                 of your business&apos;s full potential. Our goal is to simplify

@@ -6,7 +6,7 @@ import { RiWhatsappFill } from "react-icons/ri";
 import WhatsappChatBubble from "./ChatBubble";
 
 export default function WhatsappBtn({
-  href = "https://wa.me/5547996556538",
+  href = "https://wa.me/message/N4OE3R6J6ED5K1",
   onClick,
   src = "/images/people/patricia.webp",
   alt = "Atendente Whatsapp",
@@ -18,6 +18,7 @@ export default function WhatsappBtn({
   alt?: string;
   children?: React.ReactNode;
 }) {
+  const [hoverBottom, setHoverBottom] = useState(false);
   const [hover, setHover] = useState(false);
 
   const onMouseEnter = () => {
@@ -28,6 +29,20 @@ export default function WhatsappBtn({
     setHover(false);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setHoverBottom(true);
+      } else {
+        setHoverBottom(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <a
       target="_blank"
@@ -36,7 +51,10 @@ export default function WhatsappBtn({
       onClick={onClick}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
-      className="fixed bottom-7 right-7 z-50 flex"
+      style={{
+        bottom: hoverBottom ? 28 : "-100%",
+      }}
+      className="fixed right-7 z-50 flex transition-all duration-500"
     >
       <WhatsappChatBubble>{children}</WhatsappChatBubble>
       <div

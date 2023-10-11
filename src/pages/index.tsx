@@ -63,13 +63,13 @@ export default function Home() {
 
       <ContactModalHome />
 
-      {/* <WhatsappBtn>
+      <WhatsappBtn>
         <p className="text-sm text-black">
           Want to bring your ideas to life?{" "}
           <span className="text-primary-500">Talk to us!</span>{" "}
           <span className="text-primary-500">😊</span>
         </p>
-      </WhatsappBtn> */}
+      </WhatsappBtn>
     </>
   );
 }

@@ -35,7 +35,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://merlin.app.br/images/others/screenshot.png"
+          content="https://tech.merlin.app.br/images/others/screenshot.png"
         />
         <meta property="og:url" content="https://tech.merlin.app.br/" />
         <meta property="og:type" content="website" />

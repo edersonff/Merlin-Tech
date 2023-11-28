@@ -25,15 +25,18 @@ export default function Home() {
         />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Merlin Sistemas" />
-        <meta property="og:title" content="Merlin - Tech" />
+        <meta
+          property="og:title"
+          content="Merlin Tech - Transform your brand"
+        />
         <meta
           property="og:description"
           content="Transform your brand with Merlin. We simplify technology, making it accessible and intuitive for all. Join us to experience digital empowerment."
         />
-        {/* <meta
-        property="og:image"
-        content="https://merlin.app.br/images/banner/01.png"
-      /> */}
+        <meta
+          property="og:image"
+          content="https://merlin.app.br/images/others/screenshot.png"
+        />
         <meta property="og:url" content="https://tech.merlin.app.br/" />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://tech.merlin.app.br/" />

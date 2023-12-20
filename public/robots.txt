@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.merlin.app.br/sitemap.xml
+Sitemap: https://tools.alarc.com.br/sitemap.xml
 
-Host: https://www.merlin.app.br/sitemap.xml
+Host: https://tools.alarc.com.br/sitemap.xml
